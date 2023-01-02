@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: groteskWideBold;
+  src: url(../fonts/HKGroteskWide-ExtraBold.otf);
+}
+@font-face {
+  font-family: groteskBold;
+  src: url(../fonts/HKGrotesk-Bold.ttf);
+}
+@font-face {
+  font-family: otfGlusp;
+  src: url(../fonts/OTF-Glusp.ttf);
+}
+@font-face {
+  font-family: chakraM;
+  src: url(../fonts/ChakraPetch-Medium.ttf);
+}
+header {
+  width: 100%;
+  height: 74.69px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.nav-bar {
+  width: 790px;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.4);
+  margin-top: 37px;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/papel-arrugado.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+input, label {
+  display: none;
+}
+
+img {
+  width: 183.14px;
+  height: 53.15px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  margin: 0 5px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #13141E;
+  font-family: groteskWideBold;
+}
+
+a.active, a:hover {
+  text-decoration: underline;
+}
+
+.heroSection {
+  width: 100%;
+  height: 927px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.leftSide {
+  width: 70%;
+  height: 927px;
+  background-color: #13141E;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 240px;
+}
+
+h2 {
+  font-family: otfGlusp;
+  font-size: 42px;
+  color: #fff;
+}
+
+span {
+  color: #2b2d42;
+}
+
+p {
+  font-family: chakraM;
+  font-size: 32px;
+  color: #a2a4bc;
+}
+
+.letsWorkButton {
+  width: 315px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #B11C15;
+  font-family: groteskBold;
+  font-size: 32px;
+  color: white;
+}
+
+.letsWorkButton:hover {
+  background-color: white;
+  color: #b11c15;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.rightSide {
+  width: 30%;
+  height: 927px;
+  background-image: url(../img/papel-arrugado.jpg);
+  background-size: cover;
+  background-repeat: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.imgHero {
+  width: 745px;
+  height: 745px;
+  position: absolute;
+  right: 30%;
+}
+
+/*# sourceMappingURL=styles.css.map */
