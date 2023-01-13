@@ -24,6 +24,42 @@
   font-family: chakraB;
   src: url(../fonts/ChakraPetch-Bold.ttf);
 }
+.uxUiWebService div div img {
+  width: 308.57px;
+  height: 350.39px;
+  border-radius: 20px;
+  box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.35);
+  margin: 0 35px 35px 35px;
+}
+
+.uxUiWebService div div, .uxUiWebService div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uxUiWebService div a, .uxUiWebService div a:hover {
+  width: 154px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B11C15;
+  border-radius: 15px;
+  font-size: 32px;
+  font-family: groteskBold;
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.uxUiWebService div a:hover {
+  background-color: white;
+  color: #13141E;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
 header {
   width: 100%;
   height: 74.69px;
@@ -833,6 +869,44 @@ footer .containerFooter .containerBottom a:hover {
   position: absolute;
   width: 702px;
   height: 256px;
+}
+
+.uxUiWebService {
+  width: 100%;
+  height: 934px;
+  background-color: #13141E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uxUiWebService div {
+  width: 1440px;
+  height: auto;
+  flex-direction: column;
+}
+.uxUiWebService div h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  color: white;
+  border-bottom: solid 2px white;
+  margin-bottom: 50px;
+}
+.uxUiWebService div p {
+  width: 60%;
+  font-family: chakraM;
+  font-size: 32px;
+  margin-bottom: 17px;
+  color: #A1A4BC;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.uxUiWebService div p span {
+  color: #D4D7E8;
+  font-family: chakraB;
+}
+.uxUiWebService div div {
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=styles.css.map */

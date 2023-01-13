@@ -1,0 +1,36 @@
+%picPortfolio {
+    width: 308.57px;
+    height: 350.39px;
+    border-radius: 20px;
+    box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.35);
+    margin: 0 35px 35px 35px;
+}
+
+%flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%buttonPortfolio {
+    width: 154px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B11C15;
+    border-radius: 15px;
+    font-size: 32px;
+    font-family: groteskBold;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+%buttonPortfolioHover {
+    @extend %buttonPortfolio;
+    background-color: white;
+    color: #13141E;
+    transition: 0.5s;
+    text-decoration: none;
+}
