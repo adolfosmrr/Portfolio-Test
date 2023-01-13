@@ -1,0 +1,56 @@
+@mixin letsWorkButton1{
+    width: 315px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #B11C15;
+    font-family: groteskBold;
+    font-size: 32px;
+    color: white;
+    text-decoration: none
+}
+
+@mixin letsWorkButtonHover{
+        @include letsWorkButton1();
+        background-color: white;
+        color: #b11c15;
+        transition: 0.5s;
+        text-decoration: none;
+}
+
+@mixin portfolioButton1{
+    width: 154px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e4e4;
+    border-radius: 15px;
+    font-size: 32px;
+    font-family: groteskBold;
+    color: #13141e;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+@mixin portfolioButtonHover{
+    @include portfolioButton1();
+    background-color: #0B0A12;
+    color: #E7E4E4;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+@mixin webH2{
+    font-size: 64px;
+    font-family: otfGlusp;
+    margin-bottom: 0;
+}
+
+@mixin webP{
+    font-family: chakraM;
+    font-size: 32px;
+    margin-bottom: 17px;
+}

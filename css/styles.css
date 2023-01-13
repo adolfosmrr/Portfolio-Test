@@ -20,6 +20,10 @@
   font-family: chakraM;
   src: url(../fonts/ChakraPetch-Medium.ttf);
 }
+@font-face {
+  font-family: chakraB;
+  src: url(../fonts/ChakraPetch-Bold.ttf);
+}
 header {
   width: 100%;
   height: 74.69px;
@@ -28,16 +32,14 @@ header {
   position: fixed;
   z-index: 1;
 }
-
-.nav-bar {
+header .nav-bar {
   width: 790px;
   height: 100%;
   border-radius: 10px;
   box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.4);
   margin-top: 37px;
 }
-
-nav {
+header .nav-bar nav {
   width: 100%;
   height: 100%;
   background-image: url("../img/papel-arrugado.jpg");
@@ -48,36 +50,30 @@ nav {
   justify-content: center;
   border-radius: 10px;
 }
-
-input, label {
+header .nav-bar nav input, header .nav-bar nav label {
   display: none;
 }
-
-img {
+header .nav-bar nav .logo {
   width: 183.14px;
   height: 53.15px;
 }
-
-ul {
+header .nav-bar nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   margin: 0;
 }
-
-li {
+header .nav-bar nav ul li {
   margin: 0 5px;
 }
-
-a {
+header .nav-bar nav ul li a {
   text-decoration: none;
   font-size: 16px;
   color: #13141E;
   font-family: groteskWideBold;
 }
-
-a.active, a:hover {
+header .nav-bar nav ul li a.active, header .nav-bar nav ul li a:hover {
   text-decoration: underline;
 }
 
@@ -89,8 +85,7 @@ a.active, a:hover {
   align-items: center;
   background-color: aqua;
 }
-
-.leftSide {
+.heroSection .leftSide {
   width: 70%;
   height: 927px;
   background-color: #13141E;
@@ -99,24 +94,20 @@ a.active, a:hover {
   flex-direction: column;
   padding: 0 240px;
 }
-
-h2 {
+.heroSection .leftSide h2 {
   font-family: otfGlusp;
   font-size: 42px;
   color: #fff;
 }
-
-span {
+.heroSection .leftSide h2 span {
   color: #2b2d42;
 }
-
-p {
+.heroSection .leftSide p {
   font-family: chakraM;
   font-size: 32px;
   color: #a2a4bc;
 }
-
-.letsWorkButton {
+.heroSection .leftSide .letsWorkButton {
   width: 315px;
   height: 62px;
   display: flex;
@@ -127,16 +118,26 @@ p {
   font-family: groteskBold;
   font-size: 32px;
   color: white;
+  text-decoration: none;
 }
-
-.letsWorkButton:hover {
+.heroSection .leftSide .letsWorkButton:hover {
+  width: 315px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #B11C15;
+  font-family: groteskBold;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
   background-color: white;
   color: #b11c15;
   transition: 0.5s;
   text-decoration: none;
 }
-
-.rightSide {
+.heroSection .rightSide {
   width: 30%;
   height: 927px;
   background-image: url(../img/papel-arrugado.jpg);
@@ -146,8 +147,7 @@ p {
   align-items: center;
   position: relative;
 }
-
-.imgHero {
+.heroSection .rightSide .imgHero {
   width: 745px;
   height: 745px;
   position: absolute;
@@ -162,27 +162,577 @@ p {
   align-items: center;
   justify-content: center;
 }
-
-.content {
+.secondMenu .content {
   width: 1440px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.secondMenuL {
+.secondMenu .content a {
   font-family: otfGlusp;
   font-size: 26px;
   margin: 0 15px;
   color: #C9C9C9;
+  text-decoration: none;
 }
-
-.circleL {
+.secondMenu .content a:hover {
+  color: #B11C15;
+  transition: 0.5s;
+}
+.secondMenu .content .circleL {
   width: 21px;
   height: 21px;
   background-color: #2B2D42;
   border-radius: 50px;
+}
+
+.uiUxSection {
+  width: 100%;
+  height: 527px;
+  background-color: #13141E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.uiUxSection div {
+  width: 1440px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.uiUxSection div .uiUxLeft {
+  width: 60%;
+  height: auto;
+}
+.uiUxSection div .uiUxLeft h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  color: white;
+}
+.uiUxSection div .uiUxLeft p {
+  font-family: chakraM;
+  font-size: 32px;
+  margin-bottom: 17px;
+  color: #a1a4bc;
+}
+.uiUxSection div .uiUxLeft p span {
+  color: #d4d7e8;
+  font-family: chakraB;
+}
+.uiUxSection div .uiUxLeft .buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: baseline;
+}
+.uiUxSection div .uiUxLeft .buttons .letsWorkButton {
+  width: 315px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #B11C15;
+  font-family: groteskBold;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+}
+.uiUxSection div .uiUxLeft .buttons .letsWorkButton:hover {
+  width: 315px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #B11C15;
+  font-family: groteskBold;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  background-color: white;
+  color: #b11c15;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.uiUxSection div .uiUxLeft .buttons .portfolioButton {
+  width: 154px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e4e4;
+  border-radius: 15px;
+  font-size: 32px;
+  font-family: groteskBold;
+  color: #13141e;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.uiUxSection div .uiUxLeft .buttons .portfolioButton:hover {
+  width: 154px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e4e4;
+  border-radius: 15px;
+  font-size: 32px;
+  font-family: groteskBold;
+  color: #13141e;
+  text-decoration: none;
+  margin-left: 20px;
+  background-color: #0B0A12;
+  color: #E7E4E4;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.uiUxSection div .uiUxRight {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.uiUxSection div .uiUxRight img {
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 27px;
+}
+
+.wDeveloperSection {
+  width: 100%;
+  height: 527px;
+  background-image: url(../img/papel-arrugado.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wDeveloperSection div {
+  width: 1440px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.wDeveloperSection div .wDeveloperLeft {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.wDeveloperSection div .wDeveloperLeft img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 30px;
+}
+.wDeveloperSection div .wDeveloperRight {
+  width: 60%;
+  height: auto;
+}
+.wDeveloperSection div .wDeveloperRight h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  color: #13141E;
+  text-align: end;
+}
+.wDeveloperSection div .wDeveloperRight p {
+  font-family: chakraM;
+  font-size: 32px;
+  margin-bottom: 17px;
+  color: #3A3D57;
+  text-align: end;
+}
+.wDeveloperSection div .wDeveloperRight p span {
+  color: #13141E;
+  font-family: chakraB;
+}
+.wDeveloperSection div .wDeveloperRight .buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: end;
+}
+.wDeveloperSection div .wDeveloperRight .buttons .letsWorkButton {
+  width: 315px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #B11C15;
+  font-family: groteskBold;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+}
+.wDeveloperSection div .wDeveloperRight .buttons .letsWorkButton:hover {
+  width: 315px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #B11C15;
+  font-family: groteskBold;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  background-color: white;
+  color: #b11c15;
+  transition: 0.5s;
+  text-decoration: none;
+  background-color: #13141E;
+  color: white;
+}
+.wDeveloperSection div .wDeveloperRight .buttons .portfolioButton {
+  width: 154px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e4e4;
+  border-radius: 15px;
+  font-size: 32px;
+  font-family: groteskBold;
+  color: #13141e;
+  text-decoration: none;
+  margin-left: 20px;
+  background-color: #13141E;
+  color: white;
+}
+.wDeveloperSection div .wDeveloperRight .buttons .portfolioButton:hover {
+  width: 154px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e4e4;
+  border-radius: 15px;
+  font-size: 32px;
+  font-family: groteskBold;
+  color: #13141e;
+  text-decoration: none;
+  margin-left: 20px;
+  background-color: #0B0A12;
+  color: #E7E4E4;
+  transition: 0.5s;
+  text-decoration: none;
+  background-color: #B11C15;
+}
+
+.mDesignSection {
+  width: 100%;
+  height: 527px;
+  background-color: #13141E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mDesignSection div {
+  width: 1440px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.mDesignSection div .mDesignLeft {
+  width: 60%;
+  height: auto;
+}
+.mDesignSection div .mDesignLeft h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  color: white;
+}
+.mDesignSection div .mDesignLeft p {
+  font-family: chakraM;
+  font-size: 32px;
+  margin-bottom: 17px;
+  color: #A1A4BC;
+}
+.mDesignSection div .mDesignLeft p span {
+  color: #D4D7E8;
+}
+.mDesignSection div .mDesignLeft .buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.mDesignSection div .mDesignLeft .buttons .letsWorkButton {
+  width: 315px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #B11C15;
+  font-family: groteskBold;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+}
+.mDesignSection div .mDesignLeft .buttons .letsWorkButton:hover {
+  width: 315px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #B11C15;
+  font-family: groteskBold;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  background-color: white;
+  color: #b11c15;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.mDesignSection div .mDesignLeft .buttons .portfolioButton {
+  width: 154px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e4e4;
+  border-radius: 15px;
+  font-size: 32px;
+  font-family: groteskBold;
+  color: #13141e;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.mDesignSection div .mDesignLeft .buttons .portfolioButton:hover {
+  width: 154px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e4e4;
+  border-radius: 15px;
+  font-size: 32px;
+  font-family: groteskBold;
+  color: #13141e;
+  text-decoration: none;
+  margin-left: 20px;
+  background-color: #0B0A12;
+  color: #E7E4E4;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.mDesignSection div .mDesignRight {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.mDesignSection div .mDesignRight img {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: 30px;
+}
+
+.tattooSection {
+  width: 100%;
+  height: 527px;
+  background-image: url(../img/papel-arrugado.jpg);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tattooSection div {
+  width: 1440px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.tattooSection div .tattooLeft {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.tattooSection div .tattooLeft img {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: 27px;
+}
+.tattooSection div .tattooRight {
+  width: 60%;
+  height: auto;
+}
+.tattooSection div .tattooRight h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  color: 13141E;
+  text-align: end;
+}
+.tattooSection div .tattooRight p {
+  font-family: chakraM;
+  font-size: 32px;
+  margin-bottom: 17px;
+  color: #3A3D57;
+  text-align: end;
+}
+.tattooSection div .tattooRight p span {
+  color: #13141E;
+  font-family: chakraB;
+}
+.tattooSection div .tattooRight .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+}
+.tattooSection div .tattooRight .buttons .letsWorkButton {
+  width: 315px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #B11C15;
+  font-family: groteskBold;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+}
+.tattooSection div .tattooRight .buttons .letsWorkButton:hover {
+  width: 315px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #B11C15;
+  font-family: groteskBold;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  background-color: white;
+  color: #b11c15;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+  background-color: #13141E;
+}
+.tattooSection div .tattooRight .buttons .portfolioButton {
+  width: 154px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e4e4;
+  border-radius: 15px;
+  font-size: 32px;
+  font-family: groteskBold;
+  color: #13141e;
+  text-decoration: none;
+  margin-left: 20px;
+  background-color: #13141E;
+  color: white;
+}
+.tattooSection div .tattooRight .buttons .portfolioButton:hover {
+  width: 154px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e4e4;
+  border-radius: 15px;
+  font-size: 32px;
+  font-family: groteskBold;
+  color: #13141e;
+  text-decoration: none;
+  margin-left: 20px;
+  background-color: #0B0A12;
+  color: #E7E4E4;
+  transition: 0.5s;
+  text-decoration: none;
+  background-color: #B11C15;
+}
+
+.contact {
+  width: 100%;
+  height: 784px;
+  background-color: #13141E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact div {
+  width: 1440px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact div h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  color: white;
+  margin-bottom: 30px;
+}
+.contact div h2 span {
+  color: #D4D7E8;
+}
+.contact div p {
+  font-family: chakraM;
+  font-size: 32px;
+  margin-bottom: 17px;
+  text-align: center;
+  color: #A1A4BC;
+  margin-bottom: 70px;
+}
+.contact div div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.contact div div .nameContact input {
+  background-color: #13141E;
+  border-style: none;
+  border-bottom: solid 2px white;
+  border-radius: 0;
+}
+.contact div div .nameContact input ::placeholder {
+  color: #303142;
+  font-family: chakraM;
+}
+.contact div div .emailContact input {
+  background-color: #13141E;
+  border-style: none;
+  border-bottom: solid 2px white;
+  border-radius: 0;
+}
+.contact div div .emailContact input ::placeholder {
+  color: #303142;
+  font-family: chakraM;
+}
+.contact div .textContact textarea {
+  background-color: #13141E;
+  border-radius: 0;
+  border-style: none;
+  border-bottom: solid 2px white;
+}
+
+.redRibbon {
+  width: 100%;
+  height: 80px;
+  background-color: #B11C15;
 }
 
 /*# sourceMappingURL=styles.css.map */

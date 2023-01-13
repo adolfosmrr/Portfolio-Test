@@ -6,44 +6,21 @@
 
 //========= FONTS =========//
 
-@font-face {
-    font-family: groteskWideBold;
-    src: url(../fonts/HKGroteskWide-ExtraBold.otf);
-}
-
-@font-face {
-    font-family: groteskBold;
-    src: url(../fonts/HKGrotesk-Bold.ttf);
-}
-
-@font-face {
-    font-family: otfGlusp;
-    src: url(../fonts/OTF-Glusp.ttf);
-}
-
-@font-face {
-    font-family: chakraM;
-    src: url(../fonts/ChakraPetch-Medium.ttf);
-}
+@import "./fonts.scss";
 
 //========= FONTS =========//
 
 //========= MIXIN =========//
 
-@mixin letsWorkButton1{
-    width: 315px;
-    height: 62px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    background-color: #B11C15;
-    font-family: groteskBold;
-    font-size: 32px;
-    color: white;
-}
+@import "./mixin.scss";
 
 //========= MIXIN =========//
+
+
+
+
+
+
 
 //===============================================//
 //================ 1920px - 1440px ==============//
@@ -58,7 +35,6 @@ header {
     justify-content: center;
     position:fixed;
     z-index: 1;
-}
 
     .nav-bar {
         width: 790px;
@@ -66,7 +42,6 @@ header {
         border-radius: 10px;
         box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.4);
         margin-top: 37px;
-    }
 
         nav {
             width: 100%;
@@ -78,39 +53,46 @@ header {
             align-items: center;
             justify-content: center;
             border-radius: 10px;
-        }
 
-        input, label {
-            display: none;
-        }
+            input, label {
+                display: none;
+            }
 
-            img {
+            .logo {
                 width: 183.14px;
                 height: 53.15px; 
             }
 
-        ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            margin: 0;
-        }
-
-            li {
-                margin: 0 5px;
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                margin: 0;
+    
+                li {
+                    margin: 0 5px;
+    
+                    a {
+                        text-decoration: none;
+                        font-size:  16px;
+                        color: #13141E;
+                        font-family: groteskWideBold;
+                    }
+    
+                    a.active, a:hover{
+                        text-decoration: underline;     
+                    }
+                }
             }
+        }
+    }
+}
 
-                a {
-                    text-decoration: none;
-                    font-size:  16px;
-                    color: #13141E;
-                    font-family: groteskWideBold;
-                }
 
-                a.active, a:hover{
-                    text-decoration: underline;     
-                }
+
+
+
 
 //========= FINAL HEADER =========//
 
@@ -122,6 +104,9 @@ header {
 
 //========= HERO SECTION =========//
 
+
+
+
 .heroSection {
     width: 100%;
     height: 927px;
@@ -129,7 +114,6 @@ header {
     justify-content: center;
     align-items: center;
     background-color: aqua;
-}
 
     .leftSide {
         width: 70%;
@@ -139,35 +123,32 @@ header {
         justify-content: center;
         flex-direction: column;
         padding: 0 240px;
-    }
 
         h2 {
-        font-family: otfGlusp;
-        font-size: 42px;
-        color: #fff; 
-        }
-
+            font-family: otfGlusp;
+            font-size: 42px;
+            color: #fff;
+            
             span {
                 color: #2b2d42;
             }
+        }
 
         p {
             font-family: chakraM;
             font-size: 32px;
             color: #a2a4bc;
-        }
+            }
 
         .letsWorkButton {
             @include letsWorkButton1();
         }
 
         .letsWorkButton:hover {
-            background-color: white;
-            color: #b11c15;
-            transition: 0.5s;
-            text-decoration: none;
-        }
-
+            @include letsWorkButtonHover();
+        } 
+    }
+    
     .rightSide {
         width: 30%;
         height: 927px;
@@ -177,7 +158,6 @@ header {
         display: flex;
         align-items: center;
         position: relative;
-    }
 
         .imgHero {
             width: 745px;
@@ -185,6 +165,11 @@ header {
             position: absolute;
             right: 30%;
         }
+    }
+}
+
+
+
 
 //========= HERO SECTION FINAL =========//
 
@@ -204,7 +189,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
     .content {
         width: 1440px;
@@ -212,13 +196,18 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
 
-        .secondMenuL {
+        a {
             font-family: otfGlusp;
             font-size: 26px;
             margin: 0 15px;
             color: #C9C9C9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #B11C15;
+            transition: 0.5s;
         }
 
         .circleL {
@@ -227,5 +216,522 @@ header {
             background-color: #2B2D42;
             border-radius: 50px;
         }
+    }
+}
+
+    
+
+        
 
 //========= SECOND MENU FINAL =========//
+
+
+
+
+
+//========= UX/UI DESIGN =========//
+
+.uiUxSection {
+    width: 100%;
+    height: 527px;
+    background-color: #13141E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        width: 1440px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .uiUxLeft {
+            width: 60%;
+            height: auto;
+
+            h2 {
+                @include webH2();
+                color: white;
+            }
+
+            p {
+                @include webP();
+                color: #a1a4bc;
+
+                span {
+                    color: #d4d7e8;
+                    font-family: chakraB;
+                }
+            }
+
+            .buttons {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: baseline;
+
+                .letsWorkButton {
+                    @include letsWorkButton1();
+                }
+
+                .letsWorkButton:hover {
+                    @include letsWorkButtonHover();
+                }
+
+                .portfolioButton {
+                    @include portfolioButton1();
+                }
+
+                .portfolioButton:hover {
+                    @include portfolioButtonHover();
+                }
+            }
+            
+        }
+
+        .uiUxRight {
+            width: 40%;
+            height: 100%;
+            position: relative;
+
+            img {
+                width: 120%;
+                height: 120%;
+                position: absolute;
+                top: 27px;
+            }
+        }
+    }
+}
+
+
+
+
+
+//========= UX/UI DESIGN FINAL =========//
+
+
+
+
+
+
+
+
+//========= WEB DEVELOPER =========//
+
+
+.wDeveloperSection {
+    width: 100%;
+    height: 527px;
+    background-image: url(../img/papel-arrugado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 1440px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .wDeveloperLeft {
+            width: 40%;
+            height: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 30px;
+            }
+        }
+
+        .wDeveloperRight {
+            width: 60%;
+            height: auto;
+            
+            h2 {
+                @include webH2();
+                color: #13141E;
+                text-align: end
+            }
+
+            p {
+                @include webP();
+                color: #3A3D57;
+                text-align: end;
+
+                span{
+                    color: #13141E;
+                    font-family: chakraB;
+                }
+            }
+
+            .buttons {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: end;
+
+                .letsWorkButton {
+                    @include letsWorkButton1();
+                }
+
+                .letsWorkButton:hover {
+                    @include letsWorkButtonHover();
+                    background-color: #13141E;
+                    color: white;
+                }
+
+                .portfolioButton {
+                    @include portfolioButton1();
+                    background-color: #13141E;
+                    color: white;
+                }
+
+                .portfolioButton:hover {
+                    @include portfolioButtonHover();
+                    background-color: #B11C15;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+//========= WEB DEVELOPER FINAL=========//
+
+
+
+
+
+
+
+
+
+//========= MOTION DESIGN =========//
+
+.mDesignSection {
+    width: 100%;
+    height: 527px;
+    background-color: #13141E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 1440px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .mDesignLeft {
+            width: 60%;
+            height: auto;
+
+            h2 {
+                @include webH2();
+                color: white;
+            }
+
+            p {
+                @include webP();
+                color: #A1A4BC;
+
+                span {
+                    color: #D4D7E8;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+
+                .letsWorkButton {
+                    @include letsWorkButton1();
+                }
+
+                .letsWorkButton:hover {
+                    @include letsWorkButtonHover();
+                }
+
+                .portfolioButton {
+                    @include portfolioButton1()
+                }
+
+                .portfolioButton:hover {
+                    @include portfolioButtonHover();
+                }
+            }
+        }
+
+        .mDesignRight {
+            width: 40%;
+            height: 100%;
+            position: relative;
+
+            img {
+                width: 110%;
+                height: 110%;
+                position: absolute;
+                top: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+//========= MOTION DESIGN FINAL =========//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//========= TATTOO =========//
+
+
+.tattooSection {
+    width: 100%;
+    height: 527px;
+    background-image: url(../img/papel-arrugado.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 1440px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .tattooLeft {
+            width: 40%;
+            height: 100%;
+            position: relative;
+
+            img {
+                width: 110%;
+                height: 110%;
+                position: absolute;
+                top: 27px;
+            }
+        }
+
+        .tattooRight {
+            width: 60%;
+            height: auto;
+
+            h2 {
+                @include webH2();
+                color: 13141E;
+                text-align: end;
+            }
+
+            p {
+                @include webP();
+                color: #3A3D57;
+                text-align: end;
+
+                span {
+                    color: #13141E;
+                    font-family: chakraB;
+                };
+            }
+
+            .buttons {
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                flex-direction: row;
+
+                .letsWorkButton {
+                    @include letsWorkButton1();
+                }
+
+                .letsWorkButton:hover {
+                    @include letsWorkButtonHover();
+                    color: white;
+                    background-color: #13141E;
+                }
+
+                .portfolioButton {
+                    @include portfolioButton1();
+                    background-color: #13141E;
+                    color: white;
+                }
+
+                .portfolioButton:hover {
+                    @include portfolioButtonHover();
+                    background-color: #B11C15;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+//========= TATTOO FINAL =========// 
+
+
+
+
+
+
+
+
+
+
+
+
+//========= CONTACTO =========//
+
+
+.contact {
+    width: 100%;
+    height: 784px;
+    background-color: #13141E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 1440px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            @include webH2();
+            color: white;
+            margin-bottom: 30px;
+
+            span {
+                color: #D4D7E8;
+            }
+        }
+
+        p {
+            @include webP();
+            text-align: center;
+            color: #A1A4BC;
+            margin-bottom: 70px
+        }
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            .nameContact {
+
+                input {
+                    background-color: #13141E;
+                    border-style: none;
+                    border-bottom: solid 2px white;
+                    border-radius: 0;
+                    
+                    ::placeholder {
+                        color: #303142;
+                        font-family: chakraM;
+                    }
+                }
+            }
+
+            .emailContact {
+
+                input {
+                    background-color: #13141E;
+                    border-style: none;
+                    border-bottom: solid 2px white;
+                    border-radius: 0;
+
+                    ::placeholder {
+                        color: #303142;
+                        font-family: chakraM;
+                    }
+                }
+            }     
+        }
+
+        .textContact {
+
+            textarea {
+                background-color: #13141E;
+                border-radius: 0;
+                border-style: none;
+                border-bottom: solid 2px white;
+            }
+        }
+    }
+}
+
+
+
+
+
+//========= CONTACTO FINAL =========//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//========= RED RIBBON =========//
+
+
+
+.redRibbon {
+    width: 100%;
+    height: 80px;
+    background-color: #B11C15;
+}
+
+
+
+
+//========= RED RIBBON FINAL =========//
