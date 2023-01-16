@@ -1457,7 +1457,385 @@ footer {
 
 
 
+//================== INTRO ================//
 
+
+
+
+
+
+
+
+
+
+.intro {
+    width: 100%;
+    height: 923px;
+    @extend %flexCenter;
+
+    .introLeft {
+        width: 60%;
+        height: 100%;
+        background-color: #13141E;
+        @extend %flexBase;
+        justify-content: center;
+        padding-left: 10%;
+
+        h2{
+            @include webH2();
+            color: #2B2D42;
+            font-size: 42px;
+
+            span {
+                color: white;
+            }
+        }
+
+        p {
+            @include webP();
+            color: #a2a4bc;    
+        }
+
+        a {
+            @include letsWorkButton1();
+        }
+
+        a:hover {
+            @include letsWorkButtonHover
+        }
+    }
+
+    .introRight {
+        width: 40%;
+        height: 100%;
+        background-image: url("../img/papel-arrugado.jpg");
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        position: relative;
+        @extend %flexCenter;
+        padding-right: 10%;
+
+        img {
+            width: 695px;
+            height: 695px;
+            position: absolute;
+            right: 35%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+//================== INTRO FINAL ================//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//================== NICOLAS & MUSIC ================//
+
+
+
+
+
+
+
+
+
+.nicolas, .music {
+    width: 100%;
+    height: 527px;
+    background-color: #13141E;
+    @extend %flexCenter;
+
+    div {
+        width: 1440px;
+        height: 100%;
+        @extend %flexCenter;
+
+        .left {
+            width: 60%;
+            height: auto;
+            @extend %flexBase;
+
+            h2 {
+                @include webH2();
+                color: white;
+            }
+
+            p {
+                @include webP();
+                color: #a2a4bc;
+
+                span {
+                    color: #D4D7E8;
+                    font-family: chakraB;
+                }
+            }
+        }
+
+        .right {
+            width: 40%;
+            height: 100%;
+            position: relative;
+
+            img {
+                width: 110%;
+                height: 110%;
+                position: absolute;
+                top: 40px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//================== NICOLAS & MUSIC FINAL ================//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//================== CROSSFIT ================//
+
+
+
+
+
+
+
+
+
+
+
+
+
+.crossfit {
+    width: 100%;
+    height: 527px;
+    background-image: url("../img/papel-arrugado.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @extend %flexCenter;
+
+    div {
+        width: 1440px;
+        height: 100%;
+        @extend %flexCenter;
+
+        .left {
+            width: 40%;
+            height: 100%;
+            position: relative;
+
+            img {
+                width: 110%;
+                height: 110%;
+                position: absolute;
+                top: 40px;
+            }
+        }
+
+        .right {
+            width: 60%;
+            height: 100%;
+            @extend %flexEnd;
+
+            h2 {
+                @include webH2();
+                text-align: end;
+                color: #13141E;
+            }
+
+            p {
+                @include webP();
+                color: #3a3a3a;
+                text-align: end;
+
+                span {
+                    color: #13141E;
+                    font-family: chakraB;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//================== CROSSFIT FINAL ================//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//================== CONTACT ================//
+
+
+
+
+
+
+
+.contact1 {
+    width: 100%;
+    height: 784px;
+    background-color: #2B2D42;
+    @extend %flexCenter;
+
+    div {
+        width: 1440px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            @include webH2();
+            color: white;
+            margin-bottom: 30px;
+
+            span {
+                color: #D4D7E8;
+            }
+        }
+
+        p {
+            @include webP();
+            text-align: center;
+            color: #A1A4BC;
+            margin-bottom: 70px;
+
+            span {
+                color: #D4D7E8;
+                font-family: chakraB;
+            }
+        }
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            .nameContact {
+
+                input {
+                    background-color: #2B2D42;
+                    border-style: none;
+                    border-bottom: solid 2px white;
+                    border-radius: 0;
+                    
+                    ::placeholder {
+                        color: #303142;
+                        font-family: chakraM;
+                    }
+                }
+            }
+
+            .emailContact {
+
+                input {
+                    background-color: #2B2D42;
+                    border-style: none;
+                    border-bottom: solid 2px white;
+                    border-radius: 0;
+
+                    ::placeholder {
+                        color: #303142;
+                        font-family: chakraM;
+                    }
+                }
+            }     
+        }
+
+        .textContact {
+
+            textarea {
+                background-color: #2B2D42;
+                border-radius: 0;
+                border-style: none;
+                border-bottom: solid 2px white;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+//================== CONTACT ================//
 
 
 

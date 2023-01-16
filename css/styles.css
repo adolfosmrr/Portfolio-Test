@@ -32,19 +32,19 @@
   margin: 0 35px 35px 35px;
 }
 
-.mDesignPortfolio div div, .mDesignPortfolio div, .mDesignPortfolio, .uxUiWebPortfolio div div, .tattooPortfolio div div, .uxUiWebPortfolio div, .tattooPortfolio div, .uxUiWebPortfolio, .tattooPortfolio, .mGraphicsService div div, .mGraphicsService div, .mGraphicsService, .uxUiWebService div div, .tattoosService div div, .uxUiWebService div, .tattoosService div, .uxUiWebService, .tattoosService, .banner, footer, .contact, .tattooSection, .mDesignSection, .wDeveloperSection, .uiUxSection, .secondMenu .content, .secondMenu, .heroSection, header .nav-bar nav ul, header .nav-bar nav {
+.contact1, .crossfit div, .crossfit, .nicolas div, .music div, .nicolas, .music, .intro .introRight, .intro, .mDesignPortfolio div div, .mDesignPortfolio div, .mDesignPortfolio, .uxUiWebPortfolio div div, .tattooPortfolio div div, .uxUiWebPortfolio div, .tattooPortfolio div, .uxUiWebPortfolio, .tattooPortfolio, .mGraphicsService div div, .mGraphicsService div, .mGraphicsService, .uxUiWebService div div, .tattoosService div div, .uxUiWebService div, .tattoosService div, .uxUiWebService, .tattoosService, .banner, footer, .contact, .tattooSection, .mDesignSection, .wDeveloperSection, .uiUxSection, .secondMenu .content, .secondMenu, .heroSection, header .nav-bar nav ul, header .nav-bar nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.mDesignSection div .mDesignLeft, .uiUxSection div .uiUxLeft {
+.nicolas div .left, .music div .left, .intro .introLeft, .mDesignSection div .mDesignLeft, .uiUxSection div .uiUxLeft {
   display: flex;
   flex-direction: column;
   align-items: baseline;
 }
 
-.tattooSection div .tattooRight, .wDeveloperSection div .wDeveloperRight {
+.crossfit div .right, .tattooSection div .tattooRight, .wDeveloperSection div .wDeveloperRight {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -1022,6 +1022,234 @@ footer .containerFooter .containerBottom a:hover {
   font-size: 30px;
   font-family: chakraB;
   margin-bottom: 50px;
+}
+
+.intro {
+  width: 100%;
+  height: 923px;
+}
+.intro .introLeft {
+  width: 60%;
+  height: 100%;
+  background-color: #13141E;
+  justify-content: center;
+  padding-left: 10%;
+}
+.intro .introLeft h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  color: #2B2D42;
+  font-size: 42px;
+}
+.intro .introLeft h2 span {
+  color: white;
+}
+.intro .introLeft p {
+  font-family: chakraM;
+  font-size: 32px;
+  margin-bottom: 17px;
+  color: #a2a4bc;
+}
+.intro .introLeft a {
+  width: 315px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #B11C15;
+  font-family: groteskBold;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+}
+.intro .introLeft a:hover {
+  width: 315px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #B11C15;
+  font-family: groteskBold;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  background-color: white;
+  color: #b11c15;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.intro .introRight {
+  width: 40%;
+  height: 100%;
+  background-image: url("../img/papel-arrugado.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+  padding-right: 10%;
+}
+.intro .introRight img {
+  width: 695px;
+  height: 695px;
+  position: absolute;
+  right: 35%;
+}
+
+.nicolas, .music {
+  width: 100%;
+  height: 527px;
+  background-color: #13141E;
+}
+.nicolas div, .music div {
+  width: 1440px;
+  height: 100%;
+}
+.nicolas div .left, .music div .left {
+  width: 60%;
+  height: auto;
+}
+.nicolas div .left h2, .music div .left h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  color: white;
+}
+.nicolas div .left p, .music div .left p {
+  font-family: chakraM;
+  font-size: 32px;
+  margin-bottom: 17px;
+  color: #a2a4bc;
+}
+.nicolas div .left p span, .music div .left p span {
+  color: #D4D7E8;
+  font-family: chakraB;
+}
+.nicolas div .right, .music div .right {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.nicolas div .right img, .music div .right img {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: 40px;
+}
+
+.crossfit {
+  width: 100%;
+  height: 527px;
+  background-image: url("../img/papel-arrugado.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.crossfit div {
+  width: 1440px;
+  height: 100%;
+}
+.crossfit div .left {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.crossfit div .left img {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: 40px;
+}
+.crossfit div .right {
+  width: 60%;
+  height: 100%;
+}
+.crossfit div .right h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  text-align: end;
+  color: #13141E;
+}
+.crossfit div .right p {
+  font-family: chakraM;
+  font-size: 32px;
+  margin-bottom: 17px;
+  color: #3a3a3a;
+  text-align: end;
+}
+.crossfit div .right p span {
+  color: #13141E;
+  font-family: chakraB;
+}
+
+.contact1 {
+  width: 100%;
+  height: 784px;
+  background-color: #2B2D42;
+}
+.contact1 div {
+  width: 1440px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact1 div h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  color: white;
+  margin-bottom: 30px;
+}
+.contact1 div h2 span {
+  color: #D4D7E8;
+}
+.contact1 div p {
+  font-family: chakraM;
+  font-size: 32px;
+  margin-bottom: 17px;
+  text-align: center;
+  color: #A1A4BC;
+  margin-bottom: 70px;
+}
+.contact1 div p span {
+  color: #D4D7E8;
+  font-family: chakraB;
+}
+.contact1 div div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.contact1 div div .nameContact input {
+  background-color: #2B2D42;
+  border-style: none;
+  border-bottom: solid 2px white;
+  border-radius: 0;
+}
+.contact1 div div .nameContact input ::placeholder {
+  color: #303142;
+  font-family: chakraM;
+}
+.contact1 div div .emailContact input {
+  background-color: #2B2D42;
+  border-style: none;
+  border-bottom: solid 2px white;
+  border-radius: 0;
+}
+.contact1 div div .emailContact input ::placeholder {
+  color: #303142;
+  font-family: chakraM;
+}
+.contact1 div .textContact textarea {
+  background-color: #2B2D42;
+  border-radius: 0;
+  border-style: none;
+  border-bottom: solid 2px white;
 }
 
 /*# sourceMappingURL=styles.css.map */
