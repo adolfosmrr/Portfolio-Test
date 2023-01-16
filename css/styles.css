@@ -24,7 +24,7 @@
   font-family: chakraB;
   src: url(../fonts/ChakraPetch-Bold.ttf);
 }
-.uxUiWebService div div img {
+.mDesignPortfolio div div img, .uxUiWebPortfolio div div img, .tattooPortfolio div div img, .mGraphicsService div div img, .uxUiWebService div div img, .tattoosService div div img {
   width: 308.57px;
   height: 350.39px;
   border-radius: 20px;
@@ -32,13 +32,13 @@
   margin: 0 35px 35px 35px;
 }
 
-.uxUiWebService div div, .uxUiWebService div {
+.mDesignPortfolio div div, .mDesignPortfolio div, .mDesignPortfolio, .uxUiWebPortfolio div div, .tattooPortfolio div div, .uxUiWebPortfolio div, .tattooPortfolio div, .uxUiWebPortfolio, .tattooPortfolio, .mGraphicsService div div, .mGraphicsService div, .mGraphicsService, .uxUiWebService div div, .tattoosService div div, .uxUiWebService div, .tattoosService div, .uxUiWebService, .tattoosService, .banner, footer, .contact, .tattooSection, .mDesignSection, .wDeveloperSection, .uiUxSection, .secondMenu .content, .secondMenu, .heroSection, header .nav-bar nav ul, header .nav-bar nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.uxUiWebService div a, .uxUiWebService div a:hover {
+.mDesignPortfolio div a, .uxUiWebPortfolio div a, .tattooPortfolio div a, .mGraphicsService div a, .uxUiWebService div a, .tattoosService div a, .mDesignPortfolio div a:hover, .uxUiWebPortfolio div a:hover, .tattooPortfolio div a:hover, .mGraphicsService div a:hover, .uxUiWebService div a:hover, .tattoosService div a:hover {
   width: 154px;
   height: 62px;
   display: flex;
@@ -53,7 +53,7 @@
   margin-left: 20px;
 }
 
-.uxUiWebService div a:hover {
+.mDesignPortfolio div a:hover, .uxUiWebPortfolio div a:hover, .tattooPortfolio div a:hover, .mGraphicsService div a:hover, .uxUiWebService div a:hover, .tattoosService div a:hover {
   background-color: white;
   color: #13141E;
   transition: 0.5s;
@@ -81,9 +81,6 @@ header .nav-bar nav {
   background-image: url("../img/papel-arrugado.jpg");
   background-position: center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 10px;
 }
 header .nav-bar nav input, header .nav-bar nav label {
@@ -94,9 +91,6 @@ header .nav-bar nav .logo {
   height: 53.15px;
 }
 header .nav-bar nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   list-style: none;
   margin: 0;
 }
@@ -116,9 +110,6 @@ header .nav-bar nav ul li a.active, header .nav-bar nav ul li a:hover {
 .heroSection {
   width: 100%;
   height: 927px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: aqua;
 }
 .heroSection .leftSide {
@@ -194,16 +185,10 @@ header .nav-bar nav ul li a.active, header .nav-bar nav ul li a:hover {
   width: 100%;
   height: 103px;
   background-color: #0B0A12;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .secondMenu .content {
   width: 1440px;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .secondMenu .content a {
   font-family: otfGlusp;
@@ -227,9 +212,6 @@ header .nav-bar nav ul li a.active, header .nav-bar nav ul li a:hover {
   width: 100%;
   height: 527px;
   background-color: #13141E;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .uiUxSection div {
   width: 1440px;
@@ -345,9 +327,6 @@ header .nav-bar nav ul li a.active, header .nav-bar nav ul li a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .wDeveloperSection div {
   width: 1440px;
@@ -467,9 +446,6 @@ header .nav-bar nav ul li a.active, header .nav-bar nav ul li a:hover {
   width: 100%;
   height: 527px;
   background-color: #13141E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .mDesignSection div {
   width: 1440px;
@@ -582,9 +558,6 @@ header .nav-bar nav ul li a.active, header .nav-bar nav ul li a:hover {
   background-repeat: none;
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .tattooSection div {
   width: 1440px;
@@ -703,9 +676,6 @@ header .nav-bar nav ul li a.active, header .nav-bar nav ul li a:hover {
   width: 100%;
   height: 784px;
   background-color: #13141E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .contact div {
   width: 1440px;
@@ -778,9 +748,6 @@ header .nav-bar nav ul li a.active, header .nav-bar nav ul li a:hover {
 footer {
   width: 100%;
   height: 687px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #13141E;
 }
 footer .containerFooter {
@@ -852,9 +819,6 @@ footer .containerFooter .containerBottom a:hover {
   width: 100%;
   height: 925px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .banner .bannerBG {
   width: 100%;
@@ -871,20 +835,17 @@ footer .containerFooter .containerBottom a:hover {
   height: 256px;
 }
 
-.uxUiWebService {
+.uxUiWebService, .tattoosService {
   width: 100%;
   height: 934px;
   background-color: #13141E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.uxUiWebService div {
+.uxUiWebService div, .tattoosService div {
   width: 1440px;
   height: auto;
   flex-direction: column;
 }
-.uxUiWebService div h2 {
+.uxUiWebService div h2, .tattoosService div h2 {
   font-size: 64px;
   font-family: otfGlusp;
   margin-bottom: 0;
@@ -892,7 +853,7 @@ footer .containerFooter .containerBottom a:hover {
   border-bottom: solid 2px white;
   margin-bottom: 50px;
 }
-.uxUiWebService div p {
+.uxUiWebService div p, .tattoosService div p {
   width: 60%;
   font-family: chakraM;
   font-size: 32px;
@@ -901,12 +862,118 @@ footer .containerFooter .containerBottom a:hover {
   text-align: center;
   margin-bottom: 50px;
 }
-.uxUiWebService div p span {
+.uxUiWebService div p span, .tattoosService div p span {
   color: #D4D7E8;
   font-family: chakraB;
 }
-.uxUiWebService div div {
+.uxUiWebService div div, .tattoosService div div {
   flex-direction: row;
+}
+.mGraphicsService {
+  width: 100%;
+  height: 934px;
+  background-image: url(../img/papel-arrugado.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mGraphicsService div {
+  width: 1440px;
+  height: auto;
+  flex-direction: column;
+}
+.mGraphicsService div h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  color: #13141E;
+  border-bottom: solid 2px #13141E;
+  margin-bottom: 50px;
+}
+.mGraphicsService div p {
+  width: 60%;
+  font-family: chakraM;
+  font-size: 32px;
+  margin-bottom: 17px;
+  color: #3A3D57;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.mGraphicsService div p span {
+  color: #13141E;
+  font-family: chakraB;
+}
+.mGraphicsService div div {
+  flex-direction: row;
+}
+.mGraphicsService div a:hover {
+  color: white;
+  background-color: #13141E;
+}
+
+.uxUiWebPortfolio, .tattooPortfolio {
+  width: 100%;
+  height: 1226px;
+  background-color: #13141E;
+}
+.uxUiWebPortfolio div, .tattooPortfolio div {
+  width: 1440px;
+  height: auto;
+  flex-direction: column;
+}
+.uxUiWebPortfolio div h2, .tattooPortfolio div h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  color: white;
+  border-bottom: solid 2px white;
+  margin-bottom: 50px;
+}
+.uxUiWebPortfolio div div, .tattooPortfolio div div {
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+}
+.uxUiWebPortfolio div a, .tattooPortfolio div a {
+  width: 190px;
+}
+.uxUiWebPortfolio div a:hover, .tattooPortfolio div a:hover {
+  width: 190px;
+}
+
+.mDesignPortfolio {
+  width: 100%;
+  height: 1226px;
+  background-image: url(../img/papel-arrugado.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mDesignPortfolio div {
+  width: 1140px;
+  height: auto;
+  flex-direction: column;
+}
+.mDesignPortfolio div h2 {
+  font-size: 64px;
+  font-family: otfGlusp;
+  margin-bottom: 0;
+  color: #13141E;
+  border-bottom: solid 2px #13141E;
+  margin-bottom: 50px;
+}
+.mDesignPortfolio div div {
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+}
+.mDesignPortfolio div a {
+  width: 190px;
+}
+.mDesignPortfolio div a:hover {
+  width: 190px;
+  color: white;
+  background-color: #13141E;
 }
 
 /*# sourceMappingURL=styles.css.map */
