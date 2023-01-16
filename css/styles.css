@@ -38,6 +38,18 @@
   align-items: center;
 }
 
+.mDesignSection div .mDesignLeft, .uiUxSection div .uiUxLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.tattooSection div .tattooRight, .wDeveloperSection div .wDeveloperRight {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
 .mDesignPortfolio div a, .uxUiWebPortfolio div a, .tattooPortfolio div a, .mGraphicsService div a, .uxUiWebService div a, .tattoosService div a, .mDesignPortfolio div a:hover, .uxUiWebPortfolio div a:hover, .tattooPortfolio div a:hover, .mGraphicsService div a:hover, .uxUiWebService div a:hover, .tattoosService div a:hover {
   width: 154px;
   height: 62px;

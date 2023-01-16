@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/styles.css">
+        <script src="https://kit.fontawesome.com/f222fb5798.js" crossorigin="anonymous"></script>
+        <title>Práctica Sass</title>
+    </head>
+<body>
+
+
+    <!-- ============= HEADER ============== -->
+
+
+
+    <header>
+        <div class="nav-bar">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </label>
+                <a href="#" class="enlace">
+                    <img src="../img/mesen-logo.gif" alt="Mesen" class="logo">
+                </a>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./services.html">SERVICES</a></li>
+                    <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./aboutMe.html" class="active">ABOUT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    
+
+
+    <!-- ============= HEADER FINAL ============== -->
+
+
+
+
+
+
+
+
+
+
+    <!-- ============= MAIN ============== -->
+
+
+
+
+
+
+        <main>
+
+
+
+
+    
+    <!-- ============= INTRO ============== -->
+
+
+
+
+
+
+
+    <section class="intro">
+        <div>
+            <div class="introLeft">
+                <h2>I’M <span>ADOLFO MESEN</span> i’m <span>29</span> years oldand <span>i love burgers!</span></h2>
+                <p>I’m ux/ui & motion designer, web developer and tattoo artist</p>
+                <a href="../pages/contact.html" class="letsWorkButton"></a>
+            </div>
+            <div class="introRight">
+                <img src="../img/about-me-profile.png" alt="about me info mesen">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- ============= INTRO FINAL ============== -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ============= RED RIBBON ============== -->
+
+
+
+
+
+    <div class="redRibbon"></div>
+
+
+
+
+
+    <!-- ============= RED RIBBON FINAL ============== -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ============= NICOLAS ============== -->
+
+
+
+
+
+    <section class="Nicolas">
+        <div>
+            <div class="nicolasLeft">
+                <h2>meet nicolas!</h2>
+                <p>Nico is my <span>incredibly</span> loving 10 year old golden retriever <span>son/best friend</span>. He will reply to your messages (sometimes he will <span>ask you for a cookie</span>).</p>
+            </div>
+            <div class="nicolasRight">
+                <img src="../img/about-me-Nico.png" alt="nico about me contact mesen">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ============= NICOLAS FINAL ============== -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ============= CROSSFIT ============== -->
+
+
+
+
+
+
+
+
+    <section class="crossfit">
+        <div>
+            <div class="crossfitLeft">
+                <img src="../img/about-me-Crossfit.png" alt="crossfit about me mesen contact">
+            </div>
+            <div class="crossfitRight">
+                <h2>i love crossfit</h2>
+                <p>I've been doing <span>Crossfit</span> for almost <span>10 years</span> (although <span>hamburgers</span> don't allow me to have the body I want T_T) Even in my free times I teach, <span>do you join? :)</span></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ============= CROSSFIT FINAL ============== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ============= MUSIC ============== -->
+
+
+
+
+
+
+
+
+    <section class="music">
+        <div>
+            <div class="musicLeft">
+                <h2>music lala(8)</h2>
+                <p>I listen to a bit of <span>everything</span>, it depends on the <span>mood</span> of the day. Rock, Pop, Reggaeton, Techno, etc. Can you <span>recommend</span> me a song that you <span>like</span> a lot?</p>
+            </div>
+            <div class="musicRight">
+                <img src="../img/about-me-music.png" alt="music about me mesen contact">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- ============= MUSIC ============== -->
+
+
+
+
+
+        </main>
+
+
+
+
+
+
+
+    <!-- ============= MAIN FINAL ============== -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ============= CONTACT ============== -->
+
+    <section class="contact">
+        <div>
+            <h2><span>Hi! :)</span> text me!</h2>
+            <p>Any questions you have, I answer you <span>as soon as possible.</span> Remember, consulting is <span>free</span>, so stop doubting it!</p>
+                <div class="row g-3">
+                    <div class="col nameContact" >
+                    <input type="text" class="form-control" placeholder="Full Name" aria-label="First name">
+                    </div>
+                    <div class="col emailContact">
+                    <input type="email" class="form-control" placeholder="Email" aria-label="Last name">
+                    </div>
+                </div>        
+                <div class="mt-3 textContact">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hello! Write here! :)"></textarea>
+                </div>           
+        </div>
+    </section>
+
+
+<!-- ============= CONTACT FINAL ============== -->
+
+
+
+
+
+
+
+
+
+
+<!-- ============= RED RIBBON ============== -->
+
+
+
+<div class="redRibbon"></div>
+
+
+
+
+
+<!-- ============= RED RIBBON FINAL ============== -->
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <!-- ============= MAIN FINAL ============== -->
+
+
+
+
+
+
+
+
+    <!-- ============= FOOTER ============== -->
+
+
+
+
+    <footer>
+        <div class="containerFooter">
+            <h3>contact info</h3>
+            <div class="info">
+                <div class="linksInfo">
+                    <a href="">Instagram</a>
+                    <a href="">Git Hub</a>
+                    <a href="">Behance</a>
+                </div>
+                <div class="contactInfo">
+                    <p>+54 9 1234 5678</p>
+                    <p>adolfomesen29@gmail.com</p>
+                    <p>Argentina</p>
+                </div>
+            </div>
+            <div class="containerBottom">
+                <img src="../img/mesen-logo.gif" alt="logo portfolio">
+                <div>
+                    <a href="https://www.instagram.com" class="ig"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.behance.com" class="bh"><i class="fa-brands fa-behance"></i></a>
+                    <a href="https://www.github.com" class="gh"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- ============= FOOTER FINAL ============== -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+</html>

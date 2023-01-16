@@ -12,6 +12,18 @@
     align-items: center;
 }
 
+%flexBase {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+%flexEnd {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
 %buttonPortfolio {
     width: 154px;
     height: 62px;
