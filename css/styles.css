@@ -976,4 +976,40 @@ footer .containerFooter .containerBottom a:hover {
   background-color: #13141E;
 }
 
+.contactContainer {
+  width: 100%;
+  height: 925px;
+  display: flex;
+  align-items: center;
+}
+.contactContainer .map {
+  width: 60%;
+  height: 100%;
+  background-image: url("../img/map-contact.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contactContainer .contactInfo {
+  width: 40%;
+  height: 100%;
+  background-color: #13141E;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 55px;
+}
+.contactContainer .contactInfo .contactTitle {
+  color: #D4D7E8;
+  font-size: 36px;
+  font-family: otfGlusp;
+  margin-bottom: 12px;
+}
+.contactContainer .contactInfo .contactP {
+  color: white;
+  font-size: 30px;
+  font-family: chakraB;
+  margin-bottom: 50px;
+}
+
 /*# sourceMappingURL=styles.css.map */
