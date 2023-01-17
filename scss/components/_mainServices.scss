@@ -335,6 +335,127 @@
 
 
 
+//===============================================//
+//================ 1024px - 758px ==============//
+//===============================================//
+
+
+
+
+
+@media (min-width:758px) and (max-width:1024px){
+
+
+
+    
+
+    //========= BANNER =========// 
+
+
+
+
+    .banner {
+        height: 493px;
+
+        .bannerLogo {
+            width: 320px;
+            height: auto;
+        }
+    }
+
+
+
+    //========= BANNER FINAL =========// 
+
+
+
+
+
+
+    //========= UX/UI WEB & TATTOOS =========//
+    
+    
+
+    .uxUiWebService, .tattoosService {
+        height: 1315px;
+
+        div {
+            width: 758px;
+
+            h2 {
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: 10;
+            }
+
+            p {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+
+            div {
+                flex-wrap: wrap ;
+
+                .pic4 {
+                    display: inherit;
+                }
+            }
+        }
+    }
+
+
+
+
+    //========= UX/UI WEB & TATTOOS =========// 
+
+
+
+
+
+
+    //========= MOTION GRAPHICS =========//
+
+
+
+    .mGraphicsService {
+        height: 1315px;
+
+        div {
+            width: 758px;
+
+            h2 {
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: 10;
+            }
+
+            p {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+
+            div {
+                flex-wrap: wrap ;
+
+                .pic4 {
+                    display: inherit;
+                }
+            }
+        }
+    }
+
+
+
+    //========= MOTION GRAPHICS =========//
+
+
+}
+
+
+
+
+
+
 
 
 

@@ -213,3 +213,98 @@
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//===============================================//
+//================ 1024px - 758px ==============//
+//===============================================//
+
+
+
+
+
+@media (min-width:758px) and (max-width:1024px){
+
+
+
+
+//========= UX / UI, WEB & TATTOO =========//
+
+
+
+
+.uxUiWebPortfolio, .tattooPortfolio{
+    height: 2066px;
+
+    div {
+        width: 758px;
+
+        h2 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        div {
+            flex-wrap: wrap;
+
+            .pic4 {
+                display: inherit;
+            }
+        }
+    }
+}
+
+
+
+
+//========= UX / UI, WEB & TATTOO FINAL =========//
+
+
+
+
+//========= MOTION DESIGN =========//
+
+
+
+
+.mDesignPortfolio {
+    height: 2066px;
+
+    div {
+        width: 758px;
+
+        h2 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        div {
+            flex-wrap: wrap;
+
+            .pic4 {
+                display: inherit;
+            }
+        }
+    }
+}
+
+
+
+
+//========= MOTION DESIGN =========//
+
+
+
+}

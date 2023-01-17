@@ -97,3 +97,36 @@
 
 
 }
+
+
+
+
+
+//===============================================//
+//================ 1024px - 758px ==============//
+//===============================================//
+
+
+
+
+
+@media (min-width:758px) and (max-width:1024px){
+
+
+
+
+    .contactContainer {
+        height: 812px;
+
+        .map {
+            display: none;
+        }
+
+        .contactInfo {
+            width: 100%;
+            align-items: center;
+        }
+    }
+
+
+}

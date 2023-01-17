@@ -138,3 +138,53 @@ footer {
 
 }
 
+
+
+
+
+
+
+
+
+//===============================================//
+//================ 1024px - 758px ==============//
+//===============================================//
+
+
+
+
+
+@media (min-width:758px) and (max-width:1024px){
+
+
+footer {
+    height: 520px;
+
+    .containerFooter {
+        width: 758px;
+
+        h3 {
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .info {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            a{
+                display: none;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+}
+
