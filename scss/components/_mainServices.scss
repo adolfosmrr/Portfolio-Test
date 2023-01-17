@@ -220,9 +220,117 @@
 
 
 
+
+
 //===============================================//
-//================ SERVICES FINAL ==============//
+//================ 1440px - 1024px ==============//
 //===============================================//
+
+
+
+
+@media (min-width:1024px) and (max-width:1440px) {
+
+
+
+    
+
+//========= BANNER =========//    
+
+
+
+.banner {
+    height: 695px;
+}
+
+
+//========= BANNER FINAL =========//  
+
+
+
+//========= UX / UI, WEB & TATTOO SERVICES =========//  
+
+
+
+.uxUiWebService, .tattoosService{
+    height: 827px;
+
+    div {
+        width: 1024px;
+
+        h2 {
+            @include webH2-1440();
+            margin-bottom: 40px;
+        }
+
+        p {
+        @include webP-1440();
+        width: 80%;
+        margin-bottom: 50px;
+        }
+
+        div {
+
+            img {
+                width: 296.82px;
+                height: 337.04px;
+            }
+
+            .pic4 {
+                display: none;
+            }
+        }
+    }
+}
+
+
+//========= UX / UI, WEB & TATTOO SERVICES FINAL =========// 
+
+
+
+
+//========= MOTION DESIGN =========//  
+
+
+
+.mGraphicsService {
+    height: 827px;
+
+    div {
+        width: 1024px;
+
+        h2 {
+            @include webH2-1440();
+            margin-bottom: 40px;
+        }
+
+        p {
+            @include webP-1440();
+            width: 80%;
+            margin-bottom: 50px;
+        }
+
+        div {
+
+            img {
+                width: 296.82px;
+                height: 337.04px;
+            }
+
+            .pic4 {
+                display: none;
+            }
+        }
+    }
+}
+
+
+//========= MOTION DESIGN FINAL =========//  
+
+}
+
+
+
 
 
 

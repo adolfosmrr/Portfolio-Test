@@ -5,17 +5,17 @@
   box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.35);
   margin: 0 35px 35px 35px; }
 
-header .nav-bar nav, header .nav-bar nav ul, .contact, footer, .heroSection, .secondMenu, .secondMenu .content, .uiUxSection, .mDesignSection, .wDeveloperSection, .tattooSection, .banner, .uxUiWebService, .tattoosService, .uxUiWebService div, .tattoosService div, .uxUiWebService div div, .tattoosService div div, .mGraphicsService, .mGraphicsService div, .mGraphicsService div div, .uxUiWebPortfolio, .tattooPortfolio, .uxUiWebPortfolio div, .tattooPortfolio div, .uxUiWebPortfolio div div, .tattooPortfolio div div, .mDesignPortfolio, .mDesignPortfolio div, .mDesignPortfolio div div, .intro, .intro .introRight, .nicolas, .music, .nicolas div, .music div, .crossfit, .crossfit div, .contact1 {
+header .nav-bar nav, header .nav-bar nav ul, .contact, footer, .heroSection, .secondMenu, .secondMenu .content, .uiUxSection, .wDeveloperSection, .mDesignSection, .tattooSection, .banner, .uxUiWebService, .tattoosService, .uxUiWebService div, .tattoosService div, .uxUiWebService div div, .tattoosService div div, .mGraphicsService, .mGraphicsService div, .mGraphicsService div div, .uxUiWebPortfolio, .tattooPortfolio, .uxUiWebPortfolio div, .tattooPortfolio div, .uxUiWebPortfolio div div, .tattooPortfolio div div, .mDesignPortfolio, .mDesignPortfolio div, .mDesignPortfolio div div, .intro, .intro .introRight, .nicolas, .music, .nicolas div, .music div, .crossfit, .crossfit div, .contact1 {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.uiUxSection div .left, .mDesignSection div .left, .intro .introLeft, .nicolas div .left, .music div .left {
+.uiUxSection div .uiUxLeft, .mDesignSection div .mDesignLeft, .intro .introLeft, .nicolas div .left, .music div .left {
   display: flex;
   flex-direction: column;
   align-items: baseline; }
 
-.wDeveloperSection div .right, .tattooSection div .right, .crossfit div .right {
+.wDeveloperSection div .wDeveloperRight, .tattooSection div .tattooRight, .crossfit div .right {
   display: flex;
   flex-direction: column;
   align-items: end; }
@@ -103,6 +103,9 @@ header {
           header .nav-bar nav ul li a.active, header .nav-bar nav ul li a:hover {
             text-decoration: underline; }
 
+header {
+  color: white; }
+
 .contact {
   width: 100%;
   height: 784px;
@@ -157,10 +160,6 @@ header {
       border-radius: 0;
       border-style: none;
       border-bottom: solid 2px white; }
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .contact div {
-    width: 1024px; } }
 
 .redRibbon {
   width: 100%;
@@ -223,10 +222,6 @@ footer {
         transition: 0.5s; }
       footer .containerFooter .containerBottom a:hover {
         color: #B11C15; }
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-  footer .containerFooter {
-    width: 1024px; } }
 
 .heroSection {
   width: 100%;
@@ -315,38 +310,38 @@ footer {
       background-color: #2B2D42;
       border-radius: 50px; }
 
-.uiUxSection, .mDesignSection {
+.uiUxSection {
   width: 100%;
   height: 527px;
   background-color: #13141E; }
-  .uiUxSection div, .mDesignSection div {
+  .uiUxSection div {
     width: 1440px;
     height: 100%;
     display: flex;
     align-items: center; }
-    .uiUxSection div .left, .mDesignSection div .left {
+    .uiUxSection div .uiUxLeft {
       width: 60%;
       height: auto; }
-      .uiUxSection div .left h2, .mDesignSection div .left h2 {
+      .uiUxSection div .uiUxLeft h2 {
         font-size: 64px;
         font-family: otfGlusp;
         margin-bottom: 0;
         color: white; }
-      .uiUxSection div .left p, .mDesignSection div .left p {
+      .uiUxSection div .uiUxLeft p {
         font-family: chakraM;
         font-size: 32px;
         margin-bottom: 17px;
         color: #a1a4bc; }
-        .uiUxSection div .left p span, .mDesignSection div .left p span {
+        .uiUxSection div .uiUxLeft p span {
           color: #d4d7e8;
           font-family: chakraB; }
-      .uiUxSection div .left .buttons, .mDesignSection div .left .buttons {
+      .uiUxSection div .uiUxLeft .buttons {
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: baseline; }
-        .uiUxSection div .left .buttons .letsWorkButton, .mDesignSection div .left .buttons .letsWorkButton {
+        .uiUxSection div .uiUxLeft .buttons .letsWorkButton {
           width: 315px;
           height: 62px;
           display: flex;
@@ -358,7 +353,7 @@ footer {
           font-size: 32px;
           color: white;
           text-decoration: none; }
-        .uiUxSection div .left .buttons .letsWorkButton:hover, .mDesignSection div .left .buttons .letsWorkButton:hover {
+        .uiUxSection div .uiUxLeft .buttons .letsWorkButton:hover {
           width: 315px;
           height: 62px;
           display: flex;
@@ -374,7 +369,7 @@ footer {
           color: #b11c15;
           transition: 0.5s;
           text-decoration: none; }
-        .uiUxSection div .left .buttons .portfolioButton, .mDesignSection div .left .buttons .portfolioButton {
+        .uiUxSection div .uiUxLeft .buttons .portfolioButton {
           width: 154px;
           height: 62px;
           display: flex;
@@ -387,7 +382,7 @@ footer {
           color: #13141e;
           text-decoration: none;
           margin-left: 20px; }
-        .uiUxSection div .left .buttons .portfolioButton:hover, .mDesignSection div .left .buttons .portfolioButton:hover {
+        .uiUxSection div .uiUxLeft .buttons .portfolioButton:hover {
           width: 154px;
           height: 62px;
           display: flex;
@@ -404,62 +399,62 @@ footer {
           color: #E7E4E4;
           transition: 0.5s;
           text-decoration: none; }
-    .uiUxSection div .right, .mDesignSection div .right {
+    .uiUxSection div .uiUxRight {
       width: 40%;
       height: 100%;
       position: relative; }
-      .uiUxSection div .right img, .mDesignSection div .right img {
+      .uiUxSection div .uiUxRight img {
         width: 120%;
         height: 120%;
         position: absolute;
         top: 27px; }
 
-.wDeveloperSection, .tattooSection {
+.wDeveloperSection {
   width: 100%;
   height: 527px;
   background-image: url(../img/papel-arrugado.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
-  .wDeveloperSection div, .tattooSection div {
+  .wDeveloperSection div {
     width: 1440px;
     height: 100%;
     display: flex;
     align-items: center; }
-    .wDeveloperSection div .left, .tattooSection div .left {
+    .wDeveloperSection div .wDeveloperLeft {
       width: 40%;
       height: 100%;
       position: relative; }
-      .wDeveloperSection div .left img, .tattooSection div .left img {
+      .wDeveloperSection div .wDeveloperLeft img {
         width: 100%;
         height: 100%;
         position: absolute;
         top: 30px; }
-    .wDeveloperSection div .right, .tattooSection div .right {
+    .wDeveloperSection div .wDeveloperRight {
       width: 60%;
       height: auto; }
-      .wDeveloperSection div .right h2, .tattooSection div .right h2 {
+      .wDeveloperSection div .wDeveloperRight h2 {
         font-size: 64px;
         font-family: otfGlusp;
         margin-bottom: 0;
         color: #13141E;
         text-align: end; }
-      .wDeveloperSection div .right p, .tattooSection div .right p {
+      .wDeveloperSection div .wDeveloperRight p {
         font-family: chakraM;
         font-size: 32px;
         margin-bottom: 17px;
         color: #3A3D57;
         text-align: end; }
-        .wDeveloperSection div .right p span, .tattooSection div .right p span {
+        .wDeveloperSection div .wDeveloperRight p span {
           color: #13141E;
           font-family: chakraB; }
-      .wDeveloperSection div .right .buttons, .tattooSection div .right .buttons {
+      .wDeveloperSection div .wDeveloperRight .buttons {
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: end; }
-        .wDeveloperSection div .right .buttons .letsWorkButton, .tattooSection div .right .buttons .letsWorkButton {
+        .wDeveloperSection div .wDeveloperRight .buttons .letsWorkButton {
           width: 315px;
           height: 62px;
           display: flex;
@@ -471,7 +466,7 @@ footer {
           font-size: 32px;
           color: white;
           text-decoration: none; }
-        .wDeveloperSection div .right .buttons .letsWorkButton:hover, .tattooSection div .right .buttons .letsWorkButton:hover {
+        .wDeveloperSection div .wDeveloperRight .buttons .letsWorkButton:hover {
           width: 315px;
           height: 62px;
           display: flex;
@@ -489,7 +484,7 @@ footer {
           text-decoration: none;
           background-color: #13141E;
           color: white; }
-        .wDeveloperSection div .right .buttons .portfolioButton, .tattooSection div .right .buttons .portfolioButton {
+        .wDeveloperSection div .wDeveloperRight .buttons .portfolioButton {
           width: 154px;
           height: 62px;
           display: flex;
@@ -504,7 +499,7 @@ footer {
           margin-left: 20px;
           background-color: #13141E;
           color: white; }
-        .wDeveloperSection div .right .buttons .portfolioButton:hover, .tattooSection div .right .buttons .portfolioButton:hover {
+        .wDeveloperSection div .wDeveloperRight .buttons .portfolioButton:hover {
           width: 154px;
           height: 62px;
           display: flex;
@@ -523,119 +518,209 @@ footer {
           text-decoration: none;
           background-color: #B11C15; }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .heroSection {
-    height: 758px; }
-    .heroSection .leftSide {
+.mDesignSection {
+  width: 100%;
+  height: 527px;
+  background-color: #13141E; }
+  .mDesignSection div {
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .mDesignSection div .mDesignLeft {
+      width: 60%;
+      height: auto; }
+      .mDesignSection div .mDesignLeft h2 {
+        font-size: 64px;
+        font-family: otfGlusp;
+        margin-bottom: 0;
+        color: white; }
+      .mDesignSection div .mDesignLeft p {
+        font-family: chakraM;
+        font-size: 32px;
+        margin-bottom: 17px;
+        color: #A1A4BC; }
+        .mDesignSection div .mDesignLeft p span {
+          color: #D4D7E8; }
+      .mDesignSection div .mDesignLeft .buttons {
+        display: flex;
+        align-items: center;
+        flex-direction: row; }
+        .mDesignSection div .mDesignLeft .buttons .letsWorkButton {
+          width: 315px;
+          height: 62px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 15px;
+          background-color: #B11C15;
+          font-family: groteskBold;
+          font-size: 32px;
+          color: white;
+          text-decoration: none; }
+        .mDesignSection div .mDesignLeft .buttons .letsWorkButton:hover {
+          width: 315px;
+          height: 62px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 15px;
+          background-color: #B11C15;
+          font-family: groteskBold;
+          font-size: 32px;
+          color: white;
+          text-decoration: none;
+          background-color: white;
+          color: #b11c15;
+          transition: 0.5s;
+          text-decoration: none; }
+        .mDesignSection div .mDesignLeft .buttons .portfolioButton {
+          width: 154px;
+          height: 62px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #e7e4e4;
+          border-radius: 15px;
+          font-size: 32px;
+          font-family: groteskBold;
+          color: #13141e;
+          text-decoration: none;
+          margin-left: 20px; }
+        .mDesignSection div .mDesignLeft .buttons .portfolioButton:hover {
+          width: 154px;
+          height: 62px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #e7e4e4;
+          border-radius: 15px;
+          font-size: 32px;
+          font-family: groteskBold;
+          color: #13141e;
+          text-decoration: none;
+          margin-left: 20px;
+          background-color: #0B0A12;
+          color: #E7E4E4;
+          transition: 0.5s;
+          text-decoration: none; }
+    .mDesignSection div .mDesignRight {
+      width: 40%;
       height: 100%;
-      padding: 0 180px; }
-      .heroSection .leftSide h2 {
-        font-size: 36px; }
-      .heroSection .leftSide p {
-        font-size: 28px; }
-    .heroSection .rightSide {
-      height: 100%; }
-      .heroSection .rightSide .imgHero {
-        width: 536px;
-        height: 536px; }
-  .secondMenu .content {
-    width: 1024px; }
-    .secondMenu .content a {
-      font-size: 22px;
-      margin: 7px; }
-    .secondMenu .content .circleL {
-      width: 16px;
-      height: 16px; }
-  .uiUxSection, .mDesignSection {
-    height: 402px; }
-    .uiUxSection div, .mDesignSection div {
-      width: 1024px; }
-      .uiUxSection div .left h2, .mDesignSection div .left h2 {
-        font-size: 48px;
-        font-family: otfGlusp;
-        margin-bottom: 0; }
-      .uiUxSection div .left p, .mDesignSection div .left p {
-        font-family: chakraM;
-        font-size: 22px;
-        margin-bottom: 17px; }
-  .wDeveloperSection, .tattooSection {
-    height: 402px; }
-    .wDeveloperSection div, .tattooSection div {
-      width: 1024px; }
-      .wDeveloperSection div .right h2, .tattooSection div .right h2 {
-        font-size: 48px;
-        font-family: otfGlusp;
-        margin-bottom: 0; }
-      .wDeveloperSection div .right p, .tattooSection div .right p {
-        font-family: chakraM;
-        font-size: 22px;
-        margin-bottom: 17px; } }
+      position: relative; }
+      .mDesignSection div .mDesignRight img {
+        width: 110%;
+        height: 110%;
+        position: absolute;
+        top: 30px; }
 
-@media (min-width: 758px) and (max-width: 1024px) {
-  .heroSection {
-    height: 1074px;
-    flex-direction: column-reverse; }
-    .heroSection .leftSide {
-      width: 100%;
-      height: 561px;
-      align-items: center; }
-      .heroSection .leftSide h2 {
-        font-size: 36px;
-        text-align: center; }
-      .heroSection .leftSide p {
-        font-size: 26px;
-        text-align: center; }
-    .heroSection .rightSide {
-      width: 100%;
-      height: 515px;
-      justify-content: center; }
-      .heroSection .rightSide .imgHero {
-        right: inherit;
-        top: 80px; }
-  .secondMenu {
-    display: none; }
-  .uiUxSection, .mDesignSection {
-    height: 975px; }
-    .uiUxSection div, .mDesignSection div {
-      width: 758px;
-      flex-direction: column-reverse; }
-      .uiUxSection div .left, .mDesignSection div .left {
+.tattooSection {
+  width: 100%;
+  height: 527px;
+  background-image: url(../img/papel-arrugado.jpg);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover; }
+  .tattooSection div {
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .tattooSection div .tattooLeft {
+      width: 40%;
+      height: 100%;
+      position: relative; }
+      .tattooSection div .tattooLeft img {
+        width: 110%;
+        height: 110%;
+        position: absolute;
+        top: 27px; }
+    .tattooSection div .tattooRight {
+      width: 60%;
+      height: auto; }
+      .tattooSection div .tattooRight h2 {
+        font-size: 64px;
+        font-family: otfGlusp;
+        margin-bottom: 0;
+        color: 13141E;
+        text-align: end; }
+      .tattooSection div .tattooRight p {
+        font-family: chakraM;
+        font-size: 32px;
+        margin-bottom: 17px;
+        color: #3A3D57;
+        text-align: end; }
+        .tattooSection div .tattooRight p span {
+          color: #13141E;
+          font-family: chakraB; }
+      .tattooSection div .tattooRight .buttons {
         width: 100%;
         display: flex;
-        align-items: center;
-        padding-bottom: 150px; }
-        .uiUxSection div .left h2, .mDesignSection div .left h2 {
-          text-align: center; }
-        .uiUxSection div .left p, .mDesignSection div .left p {
-          text-align: center; }
-        .uiUxSection div .left .buttons, .mDesignSection div .left .buttons {
-          justify-content: center; }
-      .uiUxSection div .right, .mDesignSection div .right {
-        width: 100%; }
-        .uiUxSection div .right img, .mDesignSection div .right img {
-          width: 628px;
-          height: 628px; }
-  .wDeveloperSection, .tattooSection {
-    height: 975px; }
-    .wDeveloperSection div, .tattooSection div {
-      width: 758px;
-      flex-direction: column; }
-      .wDeveloperSection div .right, .tattooSection div .right {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        padding-bottom: 150px; }
-        .wDeveloperSection div .right h2, .tattooSection div .right h2 {
-          text-align: center; }
-        .wDeveloperSection div .right p, .tattooSection div .right p {
-          text-align: center; }
-        .wDeveloperSection div .right .buttons, .tattooSection div .right .buttons {
-          justify-content: center; }
-      .wDeveloperSection div .left, .tattooSection div .left {
-        width: 100%; }
-        .wDeveloperSection div .left img, .tattooSection div .left img {
-          width: 494px;
-          height: 494px; } }
+        justify-content: end;
+        flex-direction: row; }
+        .tattooSection div .tattooRight .buttons .letsWorkButton {
+          width: 315px;
+          height: 62px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 15px;
+          background-color: #B11C15;
+          font-family: groteskBold;
+          font-size: 32px;
+          color: white;
+          text-decoration: none; }
+        .tattooSection div .tattooRight .buttons .letsWorkButton:hover {
+          width: 315px;
+          height: 62px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 15px;
+          background-color: #B11C15;
+          font-family: groteskBold;
+          font-size: 32px;
+          color: white;
+          text-decoration: none;
+          background-color: white;
+          color: #b11c15;
+          transition: 0.5s;
+          text-decoration: none;
+          color: white;
+          background-color: #13141E; }
+        .tattooSection div .tattooRight .buttons .portfolioButton {
+          width: 154px;
+          height: 62px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #e7e4e4;
+          border-radius: 15px;
+          font-size: 32px;
+          font-family: groteskBold;
+          color: #13141e;
+          text-decoration: none;
+          margin-left: 20px;
+          background-color: #13141E;
+          color: white; }
+        .tattooSection div .tattooRight .buttons .portfolioButton:hover {
+          width: 154px;
+          height: 62px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #e7e4e4;
+          border-radius: 15px;
+          font-size: 32px;
+          font-family: groteskBold;
+          color: #13141e;
+          text-decoration: none;
+          margin-left: 20px;
+          background-color: #0B0A12;
+          color: #E7E4E4;
+          transition: 0.5s;
+          text-decoration: none;
+          background-color: #B11C15; }
 
 .banner {
   width: 100%;
@@ -718,50 +803,6 @@ footer {
       color: white;
       background-color: #13141E; }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .banner {
-    height: 695px; }
-  .uxUiWebService, .tattoosService {
-    height: 827px; }
-    .uxUiWebService div, .tattoosService div {
-      width: 1024px; }
-      .uxUiWebService div h2, .tattoosService div h2 {
-        font-size: 48px;
-        font-family: otfGlusp;
-        margin-bottom: 0;
-        margin-bottom: 40px; }
-      .uxUiWebService div p, .tattoosService div p {
-        font-family: chakraM;
-        font-size: 22px;
-        margin-bottom: 17px;
-        width: 80%;
-        margin-bottom: 50px; }
-      .uxUiWebService div div img, .tattoosService div div img {
-        width: 296.82px;
-        height: 337.04px; }
-      .uxUiWebService div div .pic4, .tattoosService div div .pic4 {
-        display: none; }
-  .mGraphicsService {
-    height: 827px; }
-    .mGraphicsService div {
-      width: 1024px; }
-      .mGraphicsService div h2 {
-        font-size: 48px;
-        font-family: otfGlusp;
-        margin-bottom: 0;
-        margin-bottom: 40px; }
-      .mGraphicsService div p {
-        font-family: chakraM;
-        font-size: 22px;
-        margin-bottom: 17px;
-        width: 80%;
-        margin-bottom: 50px; }
-      .mGraphicsService div div img {
-        width: 296.82px;
-        height: 337.04px; }
-      .mGraphicsService div div .pic4 {
-        display: none; } }
-
 .uxUiWebPortfolio, .tattooPortfolio {
   width: 100%;
   height: 1226px;
@@ -815,40 +856,6 @@ footer {
       color: white;
       background-color: #13141E; }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .uxUiWebPortfolio, .tattooPortfolio {
-    height: 1065px; }
-    .uxUiWebPortfolio div, .tattooPortfolio div {
-      width: 1024px; }
-      .uxUiWebPortfolio div h2, .tattooPortfolio div h2 {
-        font-size: 48px;
-        font-family: otfGlusp;
-        margin-bottom: 0;
-        margin-bottom: 50px; }
-      .uxUiWebPortfolio div div img, .tattooPortfolio div div img {
-        width: 296.82px;
-        height: 337.04px; }
-      .uxUiWebPortfolio div div .pic4, .tattooPortfolio div div .pic4 {
-        display: none; }
-      .uxUiWebPortfolio div .secondPics, .tattooPortfolio div .secondPics {
-        margin-bottom: 50px; }
-  .mDesignPortfolio {
-    height: 1065px; }
-    .mDesignPortfolio div {
-      width: 1024px; }
-      .mDesignPortfolio div h2 {
-        font-size: 48px;
-        font-family: otfGlusp;
-        margin-bottom: 0;
-        margin-bottom: 50px; }
-      .mDesignPortfolio div div img {
-        width: 296.82px;
-        height: 337.04px; }
-      .mDesignPortfolio div div .pic4 {
-        display: none; }
-      .mDesignPortfolio div div .secondPics {
-        margin-bottom: 50px; } }
-
 .contactContainer {
   width: 100%;
   height: 925px;
@@ -879,18 +886,6 @@ footer {
       font-size: 30px;
       font-family: chakraB;
       margin-bottom: 50px; }
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .contactContainer {
-    height: 703px; }
-    .contactContainer .contactInfo {
-      padding-left: 64px;
-      padding-top: 100px; }
-      .contactContainer .contactInfo .contactTitle {
-        margin-bottom: 0px; }
-      .contactContainer .contactInfo .contactP {
-        font-size: 26px;
-        margin-bottom: 30px; } }
 
 .intro {
   width: 100%;
@@ -1082,47 +1077,3 @@ footer {
       border-radius: 0;
       border-style: none;
       border-bottom: solid 2px white; }
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .intro {
-    height: 758px; }
-    .intro .introLeft {
-      padding: 0 7%; }
-      .intro .introLeft h2 {
-        font-size: 36px; }
-      .intro .introLeft p {
-        font-size: 28px; }
-    .intro .introRight img {
-      width: 519px;
-      height: 519px;
-      right: 27%; }
-  .nicolas, .music {
-    height: 402px; }
-    .nicolas div, .music div {
-      width: 1024px; }
-      .nicolas div .left h2, .music div .left h2 {
-        font-size: 48px;
-        font-family: otfGlusp;
-        margin-bottom: 0; }
-      .nicolas div .left p, .music div .left p {
-        font-family: chakraM;
-        font-size: 22px;
-        margin-bottom: 17px; }
-      .nicolas div .right img, .music div .right img {
-        top: 15px; }
-  .crossfit {
-    height: 402px; }
-    .crossfit div {
-      width: 1024px; }
-      .crossfit div .right h2 {
-        font-size: 48px;
-        font-family: otfGlusp;
-        margin-bottom: 0; }
-      .crossfit div .right p {
-        font-family: chakraM;
-        font-size: 22px;
-        margin-bottom: 17px; }
-      .crossfit div .left img {
-        top: 15px; }
-  .contact1 div {
-    width: 1024px; } }
