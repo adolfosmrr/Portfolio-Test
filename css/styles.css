@@ -1217,3 +1217,100 @@ footer {
         top: 15px; }
   .contact1 div {
     width: 1024px; } }
+
+@media (min-width: 758px) and (max-width: 1024px) {
+  .intro {
+    height: 1028px;
+    flex-direction: column-reverse; }
+    .intro .introLeft {
+      width: 100%;
+      height: 513px;
+      padding: 0 5%;
+      align-items: center; }
+      .intro .introLeft h2 {
+        font-size: 36px;
+        text-align: center; }
+      .intro .introLeft p {
+        font-size: 26px;
+        text-align: center; }
+    .intro .introRight {
+      width: 100%;
+      height: 515px;
+      padding-right: 0; }
+      .intro .introRight img {
+        width: 480px;
+        height: 480px;
+        right: inherit;
+        top: 110px; }
+  .nicolas {
+    height: 1123px; }
+    .nicolas div {
+      width: 758px;
+      flex-direction: column-reverse; }
+      .nicolas div .left {
+        width: 100%;
+        height: 100%;
+        justify-content: start;
+        align-items: center; }
+        .nicolas div .left h2 {
+          text-align: center;
+          font-size: 48px;
+          margin-bottom: 10px; }
+        .nicolas div .left p {
+          text-align: center; }
+      .nicolas div .right {
+        width: 100%;
+        height: 100%;
+        position: inherit; }
+        .nicolas div .right img {
+          width: 520px;
+          height: auto;
+          position: inherit; }
+  .crossfit {
+    height: 799px; }
+    .crossfit div {
+      width: 758px;
+      flex-direction: column; }
+      .crossfit div .left {
+        width: 100%;
+        height: 40%; }
+        .crossfit div .left img {
+          width: 562px;
+          height: 570px;
+          top: -240px; }
+      .crossfit div .right {
+        width: 100%;
+        height: 60%;
+        justify-content: start;
+        align-items: center; }
+        .crossfit div .right h2 {
+          text-align: center;
+          font-size: 48px;
+          margin-bottom: 10px; }
+        .crossfit div .right p {
+          text-align: center; }
+  .music {
+    height: 699px; }
+    .music div {
+      width: 758px;
+      flex-direction: column-reverse; }
+      .music div .left {
+        width: 100%;
+        height: 50%;
+        justify-content: start;
+        align-items: center; }
+        .music div .left h2 {
+          text-align: center;
+          font-size: 48px;
+          margin-bottom: 10px; }
+        .music div .left p {
+          text-align: center; }
+      .music div .right {
+        width: 100%;
+        height: 50%; }
+        .music div .right img {
+          width: 520px;
+          height: auto;
+          top: -165px; }
+  .contact1 div {
+    width: 758px; } }

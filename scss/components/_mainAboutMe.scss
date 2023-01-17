@@ -544,3 +544,240 @@
 
 
 }
+
+
+
+
+
+
+
+
+
+
+//===============================================//
+//================ 1024px - 758px ==============//
+//===============================================//
+
+
+
+
+
+@media (min-width:758px) and (max-width:1024px){
+
+
+
+
+//================== INTRO ================//
+
+
+
+
+
+.intro {
+    height: 1028px;
+    flex-direction: column-reverse;
+
+    .introLeft {
+        width: 100%;
+        height: 513px;
+        padding: 0 5%;
+        align-items: center;
+
+        h2{
+            font-size: 36px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 26px;
+            text-align: center;
+        }
+    }
+
+    .introRight {
+        width: 100%;
+        height: 515px;
+        padding-right: 0;
+
+        img {
+            width: 480px;
+            height: 480px;
+            right: inherit;
+            top: 110px;
+        }
+    }
+}
+
+
+
+//================== INTRO FINAL ================//
+
+
+
+//================== NICOLAS ================//
+
+
+
+
+    .nicolas{
+        height: 1123px;
+
+        div {
+            width: 758px;
+            flex-direction: column-reverse;
+
+            .left {
+                width: 100%;
+                height: 100%;
+                justify-content: start;
+                align-items: center;
+
+                h2 {
+                    text-align: center;
+                    font-size: 48px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            .right {
+                width: 100%;
+                height: 100%;
+                position: inherit;   
+
+                img {
+                    width: 520px;
+                    height: auto;
+                    position: inherit;
+                }
+            }
+        }
+    }
+
+
+
+
+
+//================== NICOLAS FINAL ================//
+
+//================== CROSSFIT ================//
+
+
+
+
+
+.crossfit {
+    height: 799px;
+
+    div {
+        width: 758px;
+        flex-direction: column;
+
+        .left {
+            width: 100%;
+            height: 40%;
+
+            img {
+                width: 562px;
+                height: 570px;
+                top: -240px;
+            }
+        }
+
+        .right {
+            width: 100%;
+            height: 60%;
+            justify-content: start;
+            align-items: center;
+
+            h2 {
+                text-align: center;
+                font-size: 48px;
+                margin-bottom: 10px;
+            }
+
+            p{
+                text-align: center; 
+            }
+        }
+    }
+}
+
+
+
+
+
+//================== CROSSFIT FINAL ================//
+
+
+
+
+//================== MUSIC ================//
+
+
+
+
+.music{
+    height: 699px;
+
+    div {
+        width: 758px;
+        flex-direction: column-reverse;
+
+        .left {
+            width: 100%;
+            height: 50%;
+            justify-content: start;
+            align-items: center;
+
+            h2 {
+                text-align: center;
+                font-size: 48px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .right {
+            width: 100%;
+            height: 50%;
+
+            img {
+                width: 520px;
+                height: auto;
+                top: -165px;
+            }
+        }
+    }
+}
+
+
+
+
+//================== MUSIC FINAL ================//
+
+
+
+//================== CONTACT ================//
+
+
+.contact1 {
+
+    div {
+        width: 758px;
+    }
+}
+
+
+
+//================== CONTACT FINAL ================//
+
+
+
+}
