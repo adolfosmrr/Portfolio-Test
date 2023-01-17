@@ -54,3 +54,33 @@
     font-size: 32px;
     margin-bottom: 17px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//===============================================//
+//================ 1339 - 1024px ==============//
+//===============================================//
+
+
+
+@mixin webH2-1440{
+    font-size: 48px;
+    font-family: otfGlusp;
+    margin-bottom: 0;
+}
+
+@mixin webP-1440{
+    font-family: chakraM;
+    font-size: 22px;
+    margin-bottom: 17px;
+}

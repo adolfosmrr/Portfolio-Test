@@ -1,0 +1,437 @@
+//===============================================//
+//================ 1920px - 1440px ==============//
+//===============================================//
+
+
+
+
+
+//========= HERO SECTION =========//
+
+
+
+
+.heroSection {
+    width: 100%;
+    height: 927px;
+    @extend %flexCenter;
+    background-color: aqua;
+
+    
+
+    .leftSide {
+        width: 70%;
+        height: 927px;
+        background-color: #13141E;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 240px;
+
+        h2 {
+            font-family: otfGlusp;
+            font-size: 42px;
+            color: #fff;
+            
+            span {
+                color: #2b2d42;
+            }
+        }
+
+        p {
+            font-family: chakraM;
+            font-size: 32px;
+            color: #a2a4bc;
+            }
+
+        .letsWorkButton {
+            @include letsWorkButton1();
+        }
+
+        .letsWorkButton:hover {
+            @include letsWorkButtonHover();
+        } 
+    }
+    
+    .rightSide {
+        width: 30%;
+        height: 927px;
+        background-image: url(../img/papel-arrugado.jpg);
+        background-size: cover;
+        background-repeat: none;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .imgHero {
+            width: 745px;
+            height: 745px;
+            position: absolute;
+            right: 30%;
+        }
+    }
+}
+
+
+
+
+//========= HERO SECTION FINAL =========//
+
+
+
+
+
+
+
+
+//========= SECOND MENU =========//
+
+.secondMenu {
+    width: 100%;
+    height: 103px;
+    background-color: #0B0A12;
+    @extend %flexCenter;
+
+    .content {
+        width: 1440px;
+        height: 100%;
+        @extend %flexCenter;
+
+        a {
+            font-family: otfGlusp;
+            font-size: 26px;
+            margin: 0 15px;
+            color: #C9C9C9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #B11C15;
+            transition: 0.5s;
+        }
+
+        .circleL {
+            width: 21px;
+            height: 21px;
+            background-color: #2B2D42;
+            border-radius: 50px;
+        }
+    }
+}
+
+    
+
+        
+
+//========= SECOND MENU FINAL =========//
+
+
+
+
+
+//========= UX/UI DESIGN / MOTION DESIGN =========//
+
+.uiUxSection, .mDesignSection {
+    width: 100%;
+    height: 527px;
+    background-color: #13141E;
+    @extend %flexCenter;
+
+    div {
+        width: 1440px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .left {
+            width: 60%;
+            height: auto;
+            @extend %flexBase;
+
+            h2 {
+                @include webH2();
+                color: white;
+            }
+
+            p {
+                @include webP();
+                color: #a1a4bc;
+
+                span {
+                    color: #d4d7e8;
+                    font-family: chakraB;
+                }
+            }
+
+            .buttons {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: baseline;
+
+                .letsWorkButton {
+                    @include letsWorkButton1();
+                }
+
+                .letsWorkButton:hover {
+                    @include letsWorkButtonHover();
+                }
+
+                .portfolioButton {
+                    @include portfolioButton1();
+                }
+
+                .portfolioButton:hover {
+                    @include portfolioButtonHover();
+                }
+            }
+            
+        }
+
+        .right {
+            width: 40%;
+            height: 100%;
+            position: relative;
+
+            img {
+                width: 120%;
+                height: 120%;
+                position: absolute;
+                top: 27px;
+            }
+        }
+    }
+}
+
+
+
+
+
+//========= UX/UI DESIGN FINAL / MOTION DESIGN =========//
+
+
+
+
+
+
+
+
+//========= WEB DEVELOPER / TATTOO =========//
+
+
+.wDeveloperSection, .tattooSection {
+    width: 100%;
+    height: 527px;
+    background-image: url(../img/papel-arrugado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @extend %flexCenter;
+
+    div {
+        width: 1440px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .left {
+            width: 40%;
+            height: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 30px;
+            }
+        }
+
+        .right {
+            width: 60%;
+            height: auto;
+            @extend %flexEnd;
+            
+            h2 {
+                @include webH2();
+                color: #13141E;
+                text-align: end
+            }
+
+            p {
+                @include webP();
+                color: #3A3D57;
+                text-align: end;
+
+                span{
+                    color: #13141E;
+                    font-family: chakraB;
+                }
+            }
+
+            .buttons {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: end;
+
+                .letsWorkButton {
+                    @include letsWorkButton1();
+                }
+
+                .letsWorkButton:hover {
+                    @include letsWorkButtonHover();
+                    background-color: #13141E;
+                    color: white;
+                }
+
+                .portfolioButton {
+                    @include portfolioButton1();
+                    background-color: #13141E;
+                    color: white;
+                }
+
+                .portfolioButton:hover {
+                    @include portfolioButtonHover();
+                    background-color: #B11C15;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+//========= WEB DEVELOPER FINAL / TATTOO =========//
+
+
+
+
+
+
+
+//===============================================//
+//================ 1439px - 1024px ==============//
+//===============================================//
+
+
+
+
+@media (min-width:1024px) and (max-width:1440px) {
+
+
+
+//========= HEADER =========//
+
+
+
+.heroSection {
+    height: 758px;
+
+    .leftSide {
+        height: 100%;
+        padding: 0 180px;
+
+        h2 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 28px;
+        }
+    }
+
+    .rightSide {
+        height: 100%;
+
+        .imgHero {
+            width: 536px;
+            height: 536px;
+        }
+    }
+}    
+
+
+//========= HEADER FINAL =========//
+
+
+//========= SECOND MENU =========//
+
+
+.secondMenu {
+
+    .content {
+        width: 1024px;
+
+        a {
+            font-size: 22px;
+            margin: 7px;
+        }
+
+        .circleL {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+
+//========= SECOND MENU FINAL =========//
+
+//========= UX/UI DESIGN =========//
+
+
+
+.uiUxSection, .mDesignSection {
+    height: 402px;
+
+    div {
+        width: 1024px;
+
+        .left {
+
+            h2 {
+                @include webH2-1440();
+            }
+
+            p {
+                @include webP-1440();
+            }
+        }
+    }
+}
+
+
+
+//========= UX/UI DESIGN FINAL =========//
+
+
+//========= WEB DEVELOPER =========//
+
+
+.wDeveloperSection, .tattooSection {
+    height: 402px;
+
+    div {
+        width: 1024px;
+
+        .right {
+
+            h2 {
+                @include webH2-1440();
+            }
+
+            p {
+                @include webP-1440();
+            }
+        }
+    }
+}
+
+
+//========= WEB DEVELOPER FINAL =========//
+
+}

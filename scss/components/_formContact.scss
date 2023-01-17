@@ -1,0 +1,98 @@
+//===============================================//
+//================ 1920px - 1440px ==============//
+//===============================================//
+    
+    
+    
+//========= CONTACTO =========//
+
+
+.contact {
+    width: 100%;
+    height: 784px;
+    background-color: #13141E;
+    @extend %flexCenter;
+
+    div {
+        width: 1440px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            @include webH2();
+            color: white;
+            margin-bottom: 30px;
+
+            span {
+                color: #D4D7E8;
+            }
+        }
+
+        p {
+            @include webP();
+            text-align: center;
+            color: #A1A4BC;
+            margin-bottom: 70px;
+
+            span {
+                color: #D4D7E8;
+                font-family: chakraB;
+            }
+        }
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            .nameContact {
+
+                input {
+                    background-color: #13141E;
+                    border-style: none;
+                    border-bottom: solid 2px white;
+                    border-radius: 0;
+                    
+                    ::placeholder {
+                        color: #303142;
+                        font-family: chakraM;
+                    }
+                }
+            }
+
+            .emailContact {
+
+                input {
+                    background-color: #13141E;
+                    border-style: none;
+                    border-bottom: solid 2px white;
+                    border-radius: 0;
+
+                    ::placeholder {
+                        color: #303142;
+                        font-family: chakraM;
+                    }
+                }
+            }     
+        }
+
+        .textContact {
+
+            textarea {
+                background-color: #13141E;
+                border-radius: 0;
+                border-style: none;
+                border-bottom: solid 2px white;
+            }
+        }
+    }
+}
+
+
+
+
+
+//========= CONTACTO FINAL =========//
