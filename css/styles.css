@@ -594,14 +594,14 @@ footer {
 
 @media (min-width: 758px) and (max-width: 1024px) {
   .heroSection {
-    height: 1074px;
+    height: 974px;
     flex-direction: column-reverse; }
     .heroSection .leftSide {
       width: 100%;
-      height: 561px;
+      height: 461px;
       align-items: center; }
       .heroSection .leftSide h2 {
-        font-size: 36px;
+        font-size: 32px;
         text-align: center; }
       .heroSection .leftSide p {
         font-size: 26px;
@@ -611,12 +611,14 @@ footer {
       height: 515px;
       justify-content: center; }
       .heroSection .rightSide .imgHero {
+        width: 500px;
+        height: 500px;
         right: inherit;
-        top: 80px; }
+        top: 90px; }
   .secondMenu {
     display: none; }
   .uiUxSection, .mDesignSection {
-    height: 975px; }
+    height: 875px; }
     .uiUxSection div, .mDesignSection div {
       width: 758px;
       flex-direction: column-reverse; }
@@ -624,20 +626,22 @@ footer {
         width: 100%;
         display: flex;
         align-items: center;
-        padding-bottom: 150px; }
+        padding-bottom: 100px; }
         .uiUxSection div .left h2, .mDesignSection div .left h2 {
           text-align: center; }
         .uiUxSection div .left p, .mDesignSection div .left p {
-          text-align: center; }
+          text-align: center;
+          font-size: 26px; }
         .uiUxSection div .left .buttons, .mDesignSection div .left .buttons {
           justify-content: center; }
       .uiUxSection div .right, .mDesignSection div .right {
         width: 100%; }
         .uiUxSection div .right img, .mDesignSection div .right img {
-          width: 628px;
-          height: 628px; }
+          width: 500px;
+          height: 500px;
+          top: 0px; }
   .wDeveloperSection, .tattooSection {
-    height: 975px; }
+    height: 875px; }
     .wDeveloperSection div, .tattooSection div {
       width: 758px;
       flex-direction: column; }
@@ -645,18 +649,19 @@ footer {
         width: 100%;
         display: flex;
         align-items: center;
-        padding-bottom: 150px; }
+        padding-bottom: 100px; }
         .wDeveloperSection div .right h2, .tattooSection div .right h2 {
           text-align: center; }
         .wDeveloperSection div .right p, .tattooSection div .right p {
-          text-align: center; }
+          text-align: center;
+          font-size: 26px; }
         .wDeveloperSection div .right .buttons, .tattooSection div .right .buttons {
           justify-content: center; }
       .wDeveloperSection div .left, .tattooSection div .left {
         width: 100%; }
         .wDeveloperSection div .left img, .tattooSection div .left img {
-          width: 494px;
-          height: 494px; } }
+          width: 400px;
+          height: 400px; } }
 
 .banner {
   width: 100%;

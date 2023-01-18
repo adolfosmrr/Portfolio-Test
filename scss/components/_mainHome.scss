@@ -458,16 +458,16 @@
 
 
     .heroSection {
-        height: 1074px;
+        height: 974px;
         flex-direction: column-reverse;
 
         .leftSide {
             width: 100%;
-            height: 561px;
+            height: 461px;
             align-items: center;
 
             h2{
-                font-size: 36px;
+                font-size: 32px;
                 text-align: center;
             }
 
@@ -483,8 +483,10 @@
             justify-content: center;
 
             .imgHero {
+                width: 500px;
+                height: 500px;
                 right: inherit;
-                top: 80px;
+                top: 90px;
             }
         }
     }
@@ -518,7 +520,7 @@
 
 
     .uiUxSection, .mDesignSection {
-        height: 975px;
+        height: 875px;
 
         div {
             width: 758px;
@@ -528,7 +530,7 @@
                 width: 100%;
                 display: flex;
                 align-items: center;
-                padding-bottom: 150px;
+                padding-bottom: 100px;
 
                 h2 {
                     text-align: center;
@@ -536,6 +538,7 @@
 
                 p{
                     text-align: center;
+                    font-size: 26px;
                 }
 
                 .buttons {
@@ -547,8 +550,9 @@
                 width: 100%;
 
                 img {
-                    width: 628px;
-                    height: 628px;
+                    width: 500px;
+                    height: 500px;
+                    top: 0px;
                 }
             }
         }
@@ -568,7 +572,7 @@
 
 
     .wDeveloperSection, .tattooSection {
-        height: 975px;
+        height: 875px;
 
         div {
             width: 758px;
@@ -578,7 +582,7 @@
                 width: 100%;
                 display: flex;
                 align-items: center;
-                padding-bottom: 150px;
+                padding-bottom: 100px;
 
                 h2 {
                     text-align: center;
@@ -586,6 +590,7 @@
 
                 p{
                     text-align: center;
+                    font-size: 26px;
                 }
 
                 .buttons {
@@ -597,8 +602,8 @@
                 width: 100%;
 
                 img {
-                    width: 494px;
-                    height: 494px;
+                    width: 400px;
+                    height: 400px;
                 }
             }
         }
