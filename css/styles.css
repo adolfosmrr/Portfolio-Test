@@ -3,9 +3,9 @@
   height: 350.39px;
   border-radius: 20px;
   box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.35);
-  margin: 0 30px 35px 30  px; }
+  margin: 0 30px 35px 30px; }
 
-header .nav-bar nav, header .nav-bar nav ul, .contact, footer, .heroSection, .secondMenu, .secondMenu .content, .uiUxSection, .mDesignSection, .wDeveloperSection, .tattooSection, .banner, .uxUiWebService, .tattoosService, .uxUiWebService div, .tattoosService div, .uxUiWebService div div, .tattoosService div div, .mGraphicsService, .mGraphicsService div, .mGraphicsService div div, .uxUiWebPortfolio, .tattooPortfolio, .uxUiWebPortfolio div, .tattooPortfolio div, .uxUiWebPortfolio div div, .tattooPortfolio div div, .mDesignPortfolio, .mDesignPortfolio div, .mDesignPortfolio div div, .intro, .intro .introRight, .nicolas, .music, .nicolas div, .music div, .crossfit, .crossfit div, .contact1 {
+header .nav-bar nav, header .nav-bar nav ul, .contact, .contact div .sendButton, footer, .heroSection, .secondMenu, .secondMenu .content, .uiUxSection, .mDesignSection, .wDeveloperSection, .tattooSection, .banner, .uxUiWebService, .tattoosService, .uxUiWebService div, .tattoosService div, .uxUiWebService div div, .tattoosService div div, .mGraphicsService, .mGraphicsService div, .mGraphicsService div div, .uxUiWebPortfolio, .tattooPortfolio, .uxUiWebPortfolio div, .tattooPortfolio div, .uxUiWebPortfolio div div, .tattooPortfolio div div, .mDesignPortfolio, .mDesignPortfolio div, .mDesignPortfolio div div, .intro, .intro .introRight, .nicolas, .music, .nicolas div, .music div, .crossfit, .crossfit div, .contact1, .contact1 div .sendButton {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -178,23 +178,43 @@ header {
         background-color: #13141E;
         border-style: none;
         border-bottom: solid 2px white;
-        border-radius: 0; }
-        .contact div div .nameContact input ::placeholder {
-          color: #303142;
-          font-family: chakraM; }
+        border-radius: 0;
+        color: #D4D7E8;
+        font-family: chakraM; }
+        .contact div div .nameContact input::placeholder {
+          color: white;
+          font-family: chakraB; }
       .contact div div .emailContact input {
         background-color: #13141E;
         border-style: none;
         border-bottom: solid 2px white;
-        border-radius: 0; }
-        .contact div div .emailContact input ::placeholder {
-          color: #303142;
-          font-family: chakraM; }
+        border-radius: 0;
+        color: #D4D7E8;
+        font-family: chakraM; }
+        .contact div div .emailContact input::placeholder {
+          color: white;
+          font-family: chakraB; }
     .contact div .textContact textarea {
       background-color: #13141E;
       border-radius: 0;
       border-style: none;
-      border-bottom: solid 2px white; }
+      border-bottom: solid 2px white;
+      color: #D4D7E8;
+      font-family: chakraM; }
+      .contact div .textContact textarea::placeholder {
+        color: white;
+        font-family: chakraB; }
+    .contact div .sendButton {
+      width: 90px;
+      height: 45px;
+      border-radius: 10px;
+      background-color: #B11C15;
+      color: white;
+      font-family: chakraB;
+      margin-top: 20px; }
+      .contact div .sendButton:hover {
+        background-color: white;
+        color: #B11C15; }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
   .contact div {
@@ -1445,23 +1465,43 @@ footer {
         background-color: #2B2D42;
         border-style: none;
         border-bottom: solid 2px white;
-        border-radius: 0; }
-        .contact1 div div .nameContact input ::placeholder {
-          color: #303142;
-          font-family: chakraM; }
+        border-radius: 0;
+        color: #D4D7E8;
+        font-family: chakraM; }
+        .contact1 div div .nameContact input::placeholder {
+          color: white;
+          font-family: chakraB; }
       .contact1 div div .emailContact input {
         background-color: #2B2D42;
         border-style: none;
         border-bottom: solid 2px white;
-        border-radius: 0; }
-        .contact1 div div .emailContact input ::placeholder {
-          color: #303142;
-          font-family: chakraM; }
+        border-radius: 0;
+        color: #D4D7E8;
+        font-family: chakraM; }
+        .contact1 div div .emailContact input::placeholder {
+          color: white;
+          font-family: chakraB; }
     .contact1 div .textContact textarea {
       background-color: #2B2D42;
       border-radius: 0;
       border-style: none;
-      border-bottom: solid 2px white; }
+      border-bottom: solid 2px white;
+      color: #D4D7E8;
+      font-family: chakraM; }
+      .contact1 div .textContact textarea::placeholder {
+        color: white;
+        font-family: chakraB; }
+    .contact1 div .sendButton {
+      width: 90px;
+      height: 45px;
+      border-radius: 10px;
+      background-color: #B11C15;
+      color: white;
+      font-family: chakraB;
+      margin-top: 20px; }
+      .contact1 div .sendButton:hover {
+        background-color: white;
+        color: #B11C15; }
 
 @media screen and (max-width: 1660px) {
   .intro .introRight img {

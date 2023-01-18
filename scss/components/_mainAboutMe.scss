@@ -341,10 +341,12 @@
                     border-style: none;
                     border-bottom: solid 2px white;
                     border-radius: 0;
+                    color: #D4D7E8;
+                    font-family: chakraM;
                     
-                    ::placeholder {
-                        color: #303142;
-                        font-family: chakraM;
+                    &::placeholder {
+                        color: white;
+                        font-family: chakraB;
                     }
                 }
             }
@@ -356,10 +358,12 @@
                     border-style: none;
                     border-bottom: solid 2px white;
                     border-radius: 0;
+                    color: #D4D7E8;
+                    font-family: chakraM;
 
-                    ::placeholder {
-                        color: #303142;
-                        font-family: chakraM;
+                    &::placeholder {
+                        color: white;
+                        font-family: chakraB;
                     }
                 }
             }     
@@ -372,6 +376,29 @@
                 border-radius: 0;
                 border-style: none;
                 border-bottom: solid 2px white;
+                color: #D4D7E8;
+                font-family: chakraM;
+
+                &::placeholder {
+                    color: white;
+                    font-family: chakraB;
+                }
+            }
+        }
+
+        .sendButton {
+            width: 90px;
+            height: 45px;
+            border-radius: 10px;
+            background-color: #B11C15;
+            @extend %flexCenter;
+            color: white;
+            font-family: chakraB;
+            margin-top: 20px;
+
+            &:hover {
+                background-color: white;
+                color: #B11C15;
             }
         }
     }
