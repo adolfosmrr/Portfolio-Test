@@ -3,7 +3,7 @@
   height: 350.39px;
   border-radius: 20px;
   box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.35);
-  margin: 0 30px 35px 30px; }
+  margin: 0 30px 35px 30  px; }
 
 header .nav-bar nav, header .nav-bar nav ul, .contact, footer, .heroSection, .secondMenu, .secondMenu .content, .uiUxSection, .mDesignSection, .wDeveloperSection, .tattooSection, .banner, .uxUiWebService, .tattoosService, .uxUiWebService div, .tattoosService div, .uxUiWebService div div, .tattoosService div div, .mGraphicsService, .mGraphicsService div, .mGraphicsService div div, .uxUiWebPortfolio, .tattooPortfolio, .uxUiWebPortfolio div, .tattooPortfolio div, .uxUiWebPortfolio div div, .tattooPortfolio div div, .mDesignPortfolio, .mDesignPortfolio div, .mDesignPortfolio div div, .intro, .intro .introRight, .nicolas, .music, .nicolas div, .music div, .crossfit, .crossfit div, .contact1 {
   display: flex;
@@ -1280,7 +1280,7 @@ footer {
     height: 100%;
     background-color: #13141E;
     justify-content: center;
-    padding-left: 10%; }
+    padding: 0 10%; }
     .intro .introLeft h2 {
       font-size: 64px;
       font-family: otfGlusp;
@@ -1463,6 +1463,13 @@ footer {
       border-style: none;
       border-bottom: solid 2px white; }
 
+@media screen and (max-width: 1660px) {
+  .intro .introRight img {
+    right: 20%; }
+  .nicolas div .right img, .music div .right img {
+    width: 100%;
+    height: 100%; } }
+
 @media (min-width: 1024px) and (max-width: 1440px) {
   .intro {
     height: 758px; }
@@ -1506,6 +1513,10 @@ footer {
         top: 15px; }
   .contact1 div {
     width: 1024px; } }
+
+@media screen and (max-width: 1234px) {
+  .intro .introRight img {
+    right: 15%; } }
 
 @media (min-width: 758px) and (max-width: 1024px) {
   .intro {
@@ -1695,3 +1706,15 @@ footer {
       font-size: 22px; }
     .contact1 div .contactForm {
       flex-direction: column; } }
+
+@media screen and (max-width: 682px) {
+  .intro .introRight img {
+    width: 450px;
+    height: 450px;
+    top: 5px; } }
+
+@media screen and (max-width: 457px) {
+  .intro .introRight img {
+    width: 420px;
+    height: 420px;
+    top: 5px; } }
