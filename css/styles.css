@@ -3,7 +3,7 @@
   height: 350.39px;
   border-radius: 20px;
   box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.35);
-  margin: 0 35px 35px 35px; }
+  margin: 0 30px 35px 30px; }
 
 header .nav-bar nav, header .nav-bar nav ul, .contact, footer, .heroSection, .secondMenu, .secondMenu .content, .uiUxSection, .mDesignSection, .wDeveloperSection, .tattooSection, .banner, .uxUiWebService, .tattoosService, .uxUiWebService div, .tattoosService div, .uxUiWebService div div, .tattoosService div div, .mGraphicsService, .mGraphicsService div, .mGraphicsService div div, .uxUiWebPortfolio, .tattooPortfolio, .uxUiWebPortfolio div, .tattooPortfolio div, .uxUiWebPortfolio div div, .tattooPortfolio div div, .mDesignPortfolio, .mDesignPortfolio div, .mDesignPortfolio div div, .intro, .intro .introRight, .nicolas, .music, .nicolas div, .music div, .crossfit, .crossfit div, .contact1 {
   display: flex;
@@ -102,6 +102,44 @@ header {
             font-family: groteskWideBold; }
           header .nav-bar nav ul li a.active, header .nav-bar nav ul li a:hover {
             text-decoration: underline; }
+
+@media (min-width: 425px) and (max-width: 758px) {
+  header {
+    height: 75px; }
+    header .nav-bar {
+      width: 100%;
+      border-radius: 0;
+      margin-top: 0; }
+      header .nav-bar nav {
+        border-radius: 0;
+        justify-content: space-between;
+        padding: 0 30px; }
+        header .nav-bar nav label {
+          display: flex;
+          order: 1;
+          font-size: 25px; }
+        header .nav-bar nav .logo {
+          width: 148.62px;
+          height: 46.33px; }
+        header .nav-bar nav ul {
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background-color: #13141E;
+          top: 75px;
+          left: -100%;
+          text-align: center;
+          transition: all .5s;
+          flex-direction: column; }
+          header .nav-bar nav ul li {
+            margin: 50px 0; }
+            header .nav-bar nav ul li a {
+              color: white;
+              font-size: 30px; }
+        header .nav-bar nav #check:checked ~ ul {
+          left: 0; }
+  #check:checked ~ .carouselContainer {
+    display: none; } }
 
 .contact {
   width: 100%;
@@ -574,6 +612,16 @@ footer {
           text-decoration: none;
           background-color: #B11C15; }
 
+@media screen and (max-width: 2000px) {
+  .heroSection .rightSide .imgHero {
+    right: 10%; } }
+
+@media screen and (max-width: 1680px) {
+  .uiUxSection div .left p, .mDesignSection div .left p {
+    width: 80%; }
+  .uiUxSection div .right img, .mDesignSection div .right img {
+    right: 5%; } }
+
 @media (min-width: 1024px) and (max-width: 1440px) {
   .heroSection {
     height: 758px; }
@@ -609,6 +657,8 @@ footer {
         font-family: chakraM;
         font-size: 22px;
         margin-bottom: 17px; }
+      .uiUxSection div .right img, .mDesignSection div .right img {
+        right: inherit; }
   .wDeveloperSection, .tattooSection {
     height: 402px; }
     .wDeveloperSection div, .tattooSection div {
@@ -621,6 +671,12 @@ footer {
         font-family: chakraM;
         font-size: 22px;
         margin-bottom: 17px; } }
+
+@media screen and (max-width: 1195px) {
+  .uiUxSection div .left p, .mDesignSection div .left p {
+    width: 80%; }
+  .uiUxSection div .right img, .mDesignSection div .right img {
+    right: 5%; } }
 
 @media (min-width: 758px) and (max-width: 1024px) {
   .heroSection {
@@ -670,7 +726,8 @@ footer {
         .uiUxSection div .right img, .mDesignSection div .right img {
           width: 500px;
           height: 500px;
-          top: 0px; }
+          top: 0px;
+          right: inherit; }
   .wDeveloperSection, .tattooSection {
     height: 875px; }
     .wDeveloperSection div, .tattooSection div {
@@ -696,7 +753,7 @@ footer {
 
 @media (min-width: 425px) and (max-width: 758px) {
   .heroSection {
-    height: 940px;
+    height: 840px;
     flex-direction: column-reverse; }
     .heroSection .leftSide {
       width: 100%;
@@ -727,7 +784,7 @@ footer {
         width: 509px;
         height: 509px;
         right: inherit;
-        top: 130px; }
+        top: 80px; }
   .secondMenu {
     display: none; }
   .uiUxSection {
@@ -772,7 +829,9 @@ footer {
         height: 50%; }
         .uiUxSection div .right img, .mDesignSection div .right img {
           width: 500px;
-          height: 500px; }
+          height: 500px;
+          right: inherit;
+          top: -10px; }
   .wDeveloperSection, .tattooSection {
     height: 830px; }
     .wDeveloperSection div, .tattooSection div {
@@ -817,6 +876,25 @@ footer {
   .wDeveloperSection div .left img {
     width: 420px;
     height: 420px; } }
+
+@media screen and (max-width: 700px) {
+  .heroSection .rightSide .imgHero {
+    width: 450px;
+    height: 450px;
+    top: 100px; } }
+
+@media screen and (max-width: 510px) {
+  .heroSection .rightSide .imgHero {
+    width: 410px;
+    height: 410px; }
+  .uiUxSection div .right img, .mDesignSection div .right img {
+    width: 410px;
+    height: 410px;
+    top: 0; }
+  .tattooSection div .left img {
+    width: 410px;
+    height: 410px;
+    top: 0; } }
 
 .banner {
   width: 100%;
@@ -967,7 +1045,8 @@ footer {
 
 @media (min-width: 425px) and (max-width: 758px) {
   .banner {
-    height: 473px; }
+    height: 473px;
+    padding-top: 75px; }
     .banner .bannerLogo {
       width: 160px;
       height: auto; }
@@ -1106,6 +1185,8 @@ footer {
           display: inherit; } }
 
 @media (min-width: 425px) and (max-width: 758px) {
+  .carouselContainer {
+    padding-top: 75px; }
   .uxUiWebPortfolio, .tattooPortfolio, .mDesignPortfolio {
     height: 1833px; }
     .uxUiWebPortfolio div, .tattooPortfolio div, .mDesignPortfolio div {
@@ -1178,7 +1259,8 @@ footer {
 
 @media (min-width: 425px) and (max-width: 758px) {
   .contactContainer {
-    height: 643px; }
+    height: 643px;
+    padding-top: 75px; }
     .contactContainer .map {
       display: none; }
     .contactContainer .contactInfo {
@@ -1524,8 +1606,9 @@ footer {
 
 @media (min-width: 425px) and (max-width: 758px) {
   .intro {
-    height: 740px;
-    flex-direction: column-reverse; }
+    height: 790px;
+    flex-direction: column-reverse;
+    padding-top: 75px; }
     .intro .introLeft {
       width: 100%;
       height: 315px;
@@ -1544,7 +1627,7 @@ footer {
         border-radius: 10px; }
     .intro .introRight {
       width: 100%;
-      height: 425px;
+      height: 475px;
       padding-right: 0; }
       .intro .introRight img {
         width: 480px;
@@ -1555,7 +1638,8 @@ footer {
     height: 734px; }
     .nicolas div, .music div {
       width: 425px;
-      flex-direction: column-reverse; }
+      flex-direction: column-reverse;
+      margin-top: 20px; }
       .nicolas div .left, .music div .left {
         width: 100%;
         height: 100%;
@@ -1563,17 +1647,51 @@ footer {
         align-items: center; }
         .nicolas div .left h2, .music div .left h2 {
           text-align: center;
-          font-size: 48px;
+          font-size: 38px;
           margin-bottom: 10px; }
         .nicolas div .left p, .music div .left p {
-          text-align: center; }
+          text-align: center;
+          font-size: 22px; }
       .nicolas div .right, .music div .right {
         width: 100%;
         height: 100%;
         position: inherit; }
         .nicolas div .right img, .music div .right img {
-          width: 520px;
+          width: 400px;
+          height: auto;
+          position: inherit; }
+  .crossfit {
+    height: 734px; }
+    .crossfit div {
+      width: 425px;
+      flex-direction: column;
+      margin-top: 20px; }
+      .crossfit div .right {
+        width: 100%;
+        height: 100%;
+        justify-content: start;
+        align-items: center; }
+        .crossfit div .right h2 {
+          text-align: center;
+          font-size: 38px;
+          margin-bottom: 10px; }
+        .crossfit div .right p {
+          text-align: center;
+          font-size: 22px; }
+      .crossfit div .left {
+        width: 100%;
+        height: 100%;
+        position: inherit; }
+        .crossfit div .left img {
+          width: 400px;
           height: auto;
           position: inherit; }
   .contact1 div {
-    width: 758px; } }
+    width: 425px; }
+    .contact1 div h2 {
+      font-size: 50px;
+      text-align: center; }
+    .contact1 div p {
+      font-size: 22px; }
+    .contact1 div .contactForm {
+      flex-direction: column; } }

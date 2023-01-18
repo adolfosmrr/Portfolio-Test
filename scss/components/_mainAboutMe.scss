@@ -803,8 +803,9 @@
 
 
     .intro {
-        height: 740px;
+        height: 790px;
         flex-direction: column-reverse;
+        padding-top: 75px;
     
         .introLeft {
             width: 100%;
@@ -832,7 +833,7 @@
     
         .introRight {
             width: 100%;
-            height: 425px;
+            height: 475px;
             padding-right: 0;
     
             img {
@@ -850,7 +851,7 @@
     
     
     
-    //================== NICOLAS, CROSSFIT & MUSIC ================//
+    //================== NICOLAS & MUSIC ================//
     
     
     
@@ -861,6 +862,7 @@
             div {
                 width: 425px;
                 flex-direction: column-reverse;
+                margin-top: 20px;
     
                 .left {
                     width: 100%;
@@ -870,12 +872,13 @@
     
                     h2 {
                         text-align: center;
-                        font-size: 48px;
+                        font-size: 38px;
                         margin-bottom: 10px;
                     }
     
                     p {
                         text-align: center;
+                        font-size: 22px;
                     }
                 }
     
@@ -885,7 +888,7 @@
                     position: inherit;   
     
                     img {
-                        width: 520px;
+                        width: 400px;
                         height: auto;
                         position: inherit;
                     }
@@ -897,7 +900,61 @@
     
     
     
-    //================== NICOLAS FINAL ================//
+    //================== NICOLAS & MUSIC FINAL ================//
+
+
+
+
+
+    //================== MUSIC ================//
+
+
+
+
+    .crossfit {
+        height: 734px;
+    
+            div {
+                width: 425px;
+                flex-direction: column;
+                margin-top: 20px;
+    
+                .right {
+                    width: 100%;
+                    height: 100%;
+                    justify-content: start;
+                    align-items: center;
+    
+                    h2 {
+                        text-align: center;
+                        font-size: 38px;
+                        margin-bottom: 10px;
+                    }
+    
+                    p {
+                        text-align: center;
+                        font-size: 22px;
+                    }
+                }
+    
+                .left {
+                    width: 100%;
+                    height: 100%;
+                    position: inherit;   
+    
+                    img {
+                        width: 400px;
+                        height: auto;
+                        position: inherit;
+                    }
+                }
+            }
+        }
+    
+
+
+
+    //================== MUSIC ================//
     
     
     
@@ -905,12 +962,24 @@
     
     
     .contact1 {
-    
+
         div {
-            width: 758px;
+            width: 425px;
+
+            h2 {
+                font-size: 50px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 22px;
+            }
+
+            .contactForm {
+                flex-direction: column;
+            }
         }
     }
-    
     
     
     //================== CONTACT FINAL ================//

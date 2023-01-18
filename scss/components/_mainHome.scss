@@ -313,6 +313,103 @@
 
 
 
+
+//===============================================//
+//================ screen - 2000px ==============//
+//===============================================//
+
+
+
+
+
+
+
+@media screen and (max-width:2000px) {
+
+
+
+
+    //========= HERO SECTION =========//
+
+
+    .heroSection {
+
+        .rightSide {
+
+            .imgHero {
+                right: 10%;
+            }
+        }
+    }
+
+
+    //========= HERO SECTION FINAL =========//
+
+
+}
+
+
+
+
+
+
+
+//===============================================//
+//================ screen - 1680px ==============//
+//===============================================//
+
+
+
+
+
+
+
+@media screen and (max-width:1680px) {
+
+
+    .uiUxSection, .mDesignSection {
+
+        div {
+
+            .left {
+
+                p {
+                    width: 80%;
+                }
+            }
+
+            .right {
+
+                img {
+                    right: 5%;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+
+
+    //========= UX / UI & MOTION DESIGN =========//
+
+
+    
+
+
+
+    //========= UX / UI & MOTION DESIGN FINAL =========//
+
+
+
+
+
+
+
+
 //===============================================//
 //================ 1439px - 1024px ==============//
 //===============================================//
@@ -401,6 +498,13 @@
                 @include webP-1440();
             }
         }
+
+        .right {
+
+            img {
+                right: inherit;
+            }
+        }
     }
 }
 
@@ -435,6 +539,58 @@
 //========= WEB DEVELOPER FINAL =========//
 
 }
+
+
+
+
+
+
+
+
+
+
+//===============================================//
+//================ screen - 1195px ==============//
+//===============================================//
+
+
+
+
+
+
+
+@media screen and (max-width:1195px) {
+
+
+
+    .uiUxSection, .mDesignSection {
+
+        div {
+
+            .left {
+
+                p {
+                    width: 80%;
+                }
+            }
+
+            .right {
+
+                img {
+                    right: 5%;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
 
 
 
@@ -554,6 +710,7 @@
                     width: 500px;
                     height: 500px;
                     top: 0px;
+                    right: inherit;
                 }
             }
         }
@@ -638,7 +795,7 @@
 
 
 .heroSection {
-    height: 940px;
+    height: 840px;
     flex-direction: column-reverse;
 
     .leftSide {
@@ -681,7 +838,7 @@
             width: 509px;
             height: 509px;
             right: inherit;
-            top: 130px;
+            top: 80px;
         }
     }
 }
@@ -772,6 +929,8 @@
             img {
                 width: 500px;
                 height: 500px;
+                right: inherit;
+                top: -10px;
             }
         }
     }
@@ -872,6 +1031,141 @@
 
 
 //========= WEB DEVELOPER & TATTOO SECTION =========//
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+//===============================================//
+//================ screen - 700px ==============//
+//===============================================//
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+
+
+
+    .heroSection {
+
+        .rightSide {
+
+            .imgHero {
+                width: 450px;
+                height: 450px;
+                top: 100px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+//===============================================//
+//================ screen - 510px ==============//
+//===============================================//
+
+
+
+
+
+
+
+@media screen and (max-width:510px) {
+
+
+
+
+
+
+    //========= HERO SECTION =========//
+
+    .heroSection {
+        
+        .rightSide {
+
+            .imgHero {
+                width: 410px;
+                height: 410px;
+            }
+        }
+    }
+
+
+
+    //========= HERO SECTION FINAL =========//
+
+
+
+
+
+
+
+    //========= UX / UI, WEB & MOTION DESIGH =========//
+
+
+    
+    .uiUxSection, .mDesignSection {
+
+        div {
+
+            .right {
+
+                img {
+                    width: 410px;
+                    height: 410px;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+
+
+    //========= UX / UI, WEB & MOTION DESIGH FINAL =========//
+
+
+    //========= TATTOO SECTION =========//
+
+
+
+
+    .tattooSection {
+
+        div {
+
+            .left {
+
+                img {
+                    width: 410px;
+                    height: 410px;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+
+
+    //========= TATTOO SECTION FINAL =========//
 
 
 }
