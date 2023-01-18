@@ -125,8 +125,51 @@
         .contactInfo {
             width: 100%;
             align-items: center;
+            padding-left: 0;
         }
     }
 
 
+}
+
+
+
+
+
+
+
+//===============================================//
+//================ 758px - 425px ==============//
+//===============================================//
+
+
+
+
+
+@media (min-width:425px) and (max-width:758px){
+
+    .contactContainer {
+        height: 643px;
+
+        .map {
+            display: none;
+        }
+
+        .contactInfo {
+            width: 100%;
+            align-items: center;
+            padding-left: 0;
+
+            .contactTitle {
+                font-size: 28px;
+            }
+
+            .contactP {
+                font-size: 24px;
+            }
+        }
+    }
+
+
+    
 }

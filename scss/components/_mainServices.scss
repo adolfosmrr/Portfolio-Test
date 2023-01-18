@@ -376,7 +376,7 @@
     
     
 
-    .uxUiWebService, .tattoosService {
+    .uxUiWebService, .tattoosService, .mGraphicsService {
         height: 1315px;
 
         div {
@@ -409,48 +409,107 @@
     //========= UX/UI WEB & TATTOOS =========// 
 
 
+}
 
 
 
 
-    //========= MOTION GRAPHICS =========//
+
+//===============================================//
+//================ 758px - 425px ==============//
+//===============================================//
 
 
 
-    .mGraphicsService {
-        height: 1315px;
+
+
+@media (min-width:425px) and (max-width:758px){
+
+
+
+    //========= BANNER =========// 
+
+
+
+
+    .banner {
+        height: 473px;
+
+        .bannerLogo {
+            width: 160px;
+            height: auto;
+        }
+    }
+
+
+
+
+
+    //========= BANNER FINAL =========// 
+
+
+
+
+
+
+
+    //========= UX/UI, WED & TATTOO SERVICE =========// 
+
+
+
+    .uxUiWebService, .tattoosService, .mGraphicsService {
+        height: 1164px;
 
         div {
-            width: 758px;
+            width: 425px;
 
             h2 {
-                font-size: 50px;
+                font-size: 36px;
+                margin-bottom: 15px;
                 text-align: center;
-                margin-bottom: 10;
             }
 
             p {
                 width: 100%;
-                margin-bottom: 25px;
+                font-size: 22px;
+                margin-bottom: 12px;
             }
 
             div {
-                flex-wrap: wrap ;
+                flex-direction: column;
 
-                .pic4 {
-                    display: inherit;
+                .pic3, .pic4 {
+                    display: none;
                 }
+            }
+
+            a {
+                width: 154px;
+                height: 44px;
+                font-size: 26px;
+                border-radius: 10px;
+                margin-left: 0;
             }
         }
     }
 
 
 
-    //========= MOTION GRAPHICS =========//
+
+
+
+
+
+    //========= UX/UI, WED & TATTOO SERVICE FINAL =========// 
+
+
+
+
+
+
 
 
 }
-
 
 
 

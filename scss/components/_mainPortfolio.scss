@@ -308,3 +308,51 @@
 
 
 }
+
+
+
+
+
+//===============================================//
+//================ 758px - 425px ==============//
+//===============================================//
+
+
+
+
+
+@media (min-width:425px) and (max-width:758px){
+
+
+
+    .uxUiWebPortfolio, .tattooPortfolio, .mDesignPortfolio{
+        height: 1833px;
+
+        div {
+            width: 425px;
+
+            h2 {
+                font-size: 36px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+
+            div {
+                flex-direction: column;
+            }
+
+            .secondPics {
+                display: none;
+            }
+
+            a {
+                width: 163px;
+                height: 62px;
+                font-size: 26px;
+            }
+        }
+    }
+
+
+
+}

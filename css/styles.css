@@ -166,6 +166,17 @@ header {
   .contact div {
     width: 758px; } }
 
+@media (min-width: 425px) and (max-width: 758px) {
+  .contact div {
+    width: 425px; }
+    .contact div h2 {
+      font-size: 50px;
+      text-align: center; }
+    .contact div p {
+      font-size: 22px; }
+    .contact div .contactForm {
+      flex-direction: column; } }
+
 .redRibbon {
   width: 100%;
   height: 80px;
@@ -248,6 +259,25 @@ footer {
           display: none; }
         footer .containerFooter .info p {
           text-align: center; } }
+
+@media (min-width: 425px) and (max-width: 758px) {
+  footer {
+    height: 520px; }
+    footer .containerFooter {
+      width: 425px; }
+      footer .containerFooter h3 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 0; }
+      footer .containerFooter .info {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        footer .containerFooter .info a {
+          display: none; }
+        footer .containerFooter .info .contactInfo p {
+          text-align: center;
+          font-size: 14px; } }
 
 .heroSection {
   width: 100%;
@@ -599,7 +629,8 @@ footer {
     .heroSection .leftSide {
       width: 100%;
       height: 461px;
-      align-items: center; }
+      align-items: center;
+      padding: 0 120px; }
       .heroSection .leftSide h2 {
         font-size: 32px;
         text-align: center; }
@@ -662,6 +693,130 @@ footer {
         .wDeveloperSection div .left img, .tattooSection div .left img {
           width: 400px;
           height: 400px; } }
+
+@media (min-width: 425px) and (max-width: 758px) {
+  .heroSection {
+    height: 940px;
+    flex-direction: column-reverse; }
+    .heroSection .leftSide {
+      width: 100%;
+      height: 40%;
+      padding: 0 40px;
+      align-items: center; }
+      .heroSection .leftSide h2 {
+        font-size: 25px;
+        text-align: center; }
+      .heroSection .leftSide p {
+        font-size: 22px;
+        text-align: center; }
+      .heroSection .leftSide .letsWorkButton {
+        width: 262px;
+        height: 44px;
+        font-size: 26px;
+        border-radius: 10px; }
+        .heroSection .leftSide .letsWorkButton:hover {
+          width: 262px;
+          height: 44px;
+          font-size: 26px;
+          border-radius: 10px; }
+    .heroSection .rightSide {
+      width: 100%;
+      height: 60%;
+      justify-content: center; }
+      .heroSection .rightSide .imgHero {
+        width: 509px;
+        height: 509px;
+        right: inherit;
+        top: 130px; }
+  .secondMenu {
+    display: none; }
+  .uiUxSection {
+    padding-bottom: 20px; }
+  .uiUxSection, .mDesignSection {
+    height: 830px; }
+    .uiUxSection div, .mDesignSection div {
+      width: 425px;
+      height: 100%;
+      justify-content: center;
+      flex-direction: column-reverse; }
+      .uiUxSection div .left, .mDesignSection div .left {
+        width: 100%;
+        height: 50%;
+        align-items: center; }
+        .uiUxSection div .left h2, .mDesignSection div .left h2 {
+          font-size: 40px;
+          text-align: center;
+          margin-bottom: 5px; }
+        .uiUxSection div .left p, .mDesignSection div .left p {
+          font-size: 20px;
+          text-align: center;
+          margin-bottom: 10px; }
+        .uiUxSection div .left .buttons, .mDesignSection div .left .buttons {
+          flex-direction: column;
+          justify-content: center;
+          height: auto; }
+          .uiUxSection div .left .buttons .letsWorkButton, .mDesignSection div .left .buttons .letsWorkButton {
+            width: 262px;
+            height: 44px;
+            font-size: 26px;
+            border-radius: 10px;
+            margin-bottom: 15px; }
+          .uiUxSection div .left .buttons .portfolioButton, .mDesignSection div .left .buttons .portfolioButton {
+            width: 154px;
+            height: 44px;
+            font-size: 26px;
+            border-radius: 10px;
+            margin-left: 0; }
+      .uiUxSection div .right, .mDesignSection div .right {
+        width: 100%;
+        height: 50%; }
+        .uiUxSection div .right img, .mDesignSection div .right img {
+          width: 500px;
+          height: 500px; }
+  .wDeveloperSection, .tattooSection {
+    height: 830px; }
+    .wDeveloperSection div, .tattooSection div {
+      width: 425px;
+      height: 100%;
+      justify-content: center;
+      flex-direction: column; }
+      .wDeveloperSection div .left, .tattooSection div .left {
+        width: 100%;
+        height: 50%; }
+        .wDeveloperSection div .left img, .tattooSection div .left img {
+          width: 450px;
+          height: 450px; }
+      .wDeveloperSection div .right, .tattooSection div .right {
+        width: 100%;
+        height: 50%;
+        align-items: center; }
+        .wDeveloperSection div .right h2, .tattooSection div .right h2 {
+          font-size: 40px;
+          text-align: center;
+          margin-bottom: 5px; }
+        .wDeveloperSection div .right p, .tattooSection div .right p {
+          font-size: 20px;
+          text-align: center;
+          margin-bottom: 10px; }
+        .wDeveloperSection div .right .buttons, .tattooSection div .right .buttons {
+          flex-direction: column;
+          justify-content: center;
+          height: auto; }
+          .wDeveloperSection div .right .buttons .letsWorkButton, .tattooSection div .right .buttons .letsWorkButton {
+            width: 262px;
+            height: 44px;
+            font-size: 26px;
+            border-radius: 10px;
+            margin-bottom: 15px; }
+          .wDeveloperSection div .right .buttons .portfolioButton, .tattooSection div .right .buttons .portfolioButton {
+            width: 154px;
+            height: 44px;
+            font-size: 26px;
+            border-radius: 10px;
+            margin-left: 0; }
+  .wDeveloperSection div .left img {
+    width: 420px;
+    height: 420px; } }
 
 .banner {
   width: 100%;
@@ -794,36 +949,50 @@ footer {
     .banner .bannerLogo {
       width: 320px;
       height: auto; }
-  .uxUiWebService, .tattoosService {
+  .uxUiWebService, .tattoosService, .mGraphicsService {
     height: 1315px; }
-    .uxUiWebService div, .tattoosService div {
+    .uxUiWebService div, .tattoosService div, .mGraphicsService div {
       width: 758px; }
-      .uxUiWebService div h2, .tattoosService div h2 {
+      .uxUiWebService div h2, .tattoosService div h2, .mGraphicsService div h2 {
         font-size: 50px;
         text-align: center;
         margin-bottom: 10; }
-      .uxUiWebService div p, .tattoosService div p {
+      .uxUiWebService div p, .tattoosService div p, .mGraphicsService div p {
         width: 100%;
         margin-bottom: 25px; }
-      .uxUiWebService div div, .tattoosService div div {
+      .uxUiWebService div div, .tattoosService div div, .mGraphicsService div div {
         flex-wrap: wrap; }
-        .uxUiWebService div div .pic4, .tattoosService div div .pic4 {
-          display: inherit; }
-  .mGraphicsService {
-    height: 1315px; }
-    .mGraphicsService div {
-      width: 758px; }
-      .mGraphicsService div h2 {
-        font-size: 50px;
-        text-align: center;
-        margin-bottom: 10; }
-      .mGraphicsService div p {
-        width: 100%;
-        margin-bottom: 25px; }
-      .mGraphicsService div div {
-        flex-wrap: wrap; }
-        .mGraphicsService div div .pic4 {
+        .uxUiWebService div div .pic4, .tattoosService div div .pic4, .mGraphicsService div div .pic4 {
           display: inherit; } }
+
+@media (min-width: 425px) and (max-width: 758px) {
+  .banner {
+    height: 473px; }
+    .banner .bannerLogo {
+      width: 160px;
+      height: auto; }
+  .uxUiWebService, .tattoosService, .mGraphicsService {
+    height: 1164px; }
+    .uxUiWebService div, .tattoosService div, .mGraphicsService div {
+      width: 425px; }
+      .uxUiWebService div h2, .tattoosService div h2, .mGraphicsService div h2 {
+        font-size: 36px;
+        margin-bottom: 15px;
+        text-align: center; }
+      .uxUiWebService div p, .tattoosService div p, .mGraphicsService div p {
+        width: 100%;
+        font-size: 22px;
+        margin-bottom: 12px; }
+      .uxUiWebService div div, .tattoosService div div, .mGraphicsService div div {
+        flex-direction: column; }
+        .uxUiWebService div div .pic3, .uxUiWebService div div .pic4, .tattoosService div div .pic3, .tattoosService div div .pic4, .mGraphicsService div div .pic3, .mGraphicsService div div .pic4 {
+          display: none; }
+      .uxUiWebService div a, .tattoosService div a, .mGraphicsService div a {
+        width: 154px;
+        height: 44px;
+        font-size: 26px;
+        border-radius: 10px;
+        margin-left: 0; } }
 
 .uxUiWebPortfolio, .tattooPortfolio {
   width: 100%;
@@ -936,6 +1105,24 @@ footer {
         .mDesignPortfolio div div .pic4 {
           display: inherit; } }
 
+@media (min-width: 425px) and (max-width: 758px) {
+  .uxUiWebPortfolio, .tattooPortfolio, .mDesignPortfolio {
+    height: 1833px; }
+    .uxUiWebPortfolio div, .tattooPortfolio div, .mDesignPortfolio div {
+      width: 425px; }
+      .uxUiWebPortfolio div h2, .tattooPortfolio div h2, .mDesignPortfolio div h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        text-align: center; }
+      .uxUiWebPortfolio div div, .tattooPortfolio div div, .mDesignPortfolio div div {
+        flex-direction: column; }
+      .uxUiWebPortfolio div .secondPics, .tattooPortfolio div .secondPics, .mDesignPortfolio div .secondPics {
+        display: none; }
+      .uxUiWebPortfolio div a, .tattooPortfolio div a, .mDesignPortfolio div a {
+        width: 163px;
+        height: 62px;
+        font-size: 26px; } }
+
 .contactContainer {
   width: 100%;
   height: 925px;
@@ -986,7 +1173,22 @@ footer {
       display: none; }
     .contactContainer .contactInfo {
       width: 100%;
-      align-items: center; } }
+      align-items: center;
+      padding-left: 0; } }
+
+@media (min-width: 425px) and (max-width: 758px) {
+  .contactContainer {
+    height: 643px; }
+    .contactContainer .map {
+      display: none; }
+    .contactContainer .contactInfo {
+      width: 100%;
+      align-items: center;
+      padding-left: 0; }
+      .contactContainer .contactInfo .contactTitle {
+        font-size: 28px; }
+      .contactContainer .contactInfo .contactP {
+        font-size: 24px; } }
 
 .intro {
   width: 100%;
@@ -1317,5 +1519,61 @@ footer {
           width: 520px;
           height: auto;
           top: -165px; }
+  .contact1 div {
+    width: 758px; } }
+
+@media (min-width: 425px) and (max-width: 758px) {
+  .intro {
+    height: 740px;
+    flex-direction: column-reverse; }
+    .intro .introLeft {
+      width: 100%;
+      height: 315px;
+      padding: 0 5%;
+      align-items: center; }
+      .intro .introLeft h2 {
+        font-size: 25px;
+        text-align: center; }
+      .intro .introLeft p {
+        font-size: 22px;
+        text-align: center; }
+      .intro .introLeft a {
+        width: 262px;
+        height: 44px;
+        font-size: 26px;
+        border-radius: 10px; }
+    .intro .introRight {
+      width: 100%;
+      height: 425px;
+      padding-right: 0; }
+      .intro .introRight img {
+        width: 480px;
+        height: 480px;
+        right: inherit;
+        top: 10px; }
+  .nicolas, .music {
+    height: 734px; }
+    .nicolas div, .music div {
+      width: 425px;
+      flex-direction: column-reverse; }
+      .nicolas div .left, .music div .left {
+        width: 100%;
+        height: 100%;
+        justify-content: start;
+        align-items: center; }
+        .nicolas div .left h2, .music div .left h2 {
+          text-align: center;
+          font-size: 48px;
+          margin-bottom: 10px; }
+        .nicolas div .left p, .music div .left p {
+          text-align: center; }
+      .nicolas div .right, .music div .right {
+        width: 100%;
+        height: 100%;
+        position: inherit; }
+        .nicolas div .right img, .music div .right img {
+          width: 520px;
+          height: auto;
+          position: inherit; }
   .contact1 div {
     width: 758px; } }

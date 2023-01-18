@@ -148,3 +148,42 @@
 
 
 }
+
+
+
+
+
+//===============================================//
+//================ 758px - 425px ==============//
+//===============================================//
+
+
+
+
+
+@media (min-width:425px) and (max-width:758px){
+
+
+    .contact {
+
+        div {
+            width: 425px;
+
+            h2 {
+                font-size: 50px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 22px;
+            }
+
+            .contactForm {
+                flex-direction: column;
+            }
+        }
+    }
+
+
+
+}
