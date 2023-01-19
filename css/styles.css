@@ -42,23 +42,23 @@ header .nav-bar nav, header .nav-bar nav ul, .contact, .contact div .sendButton,
 
 @font-face {
   font-family: groteskWideBold;
-  src: url("../../fonts/HKGroteskWide-ExtraBold.otf"); }
+  src: url("../fonts/HKGroteskWide-ExtraBold.otf"); }
 
 @font-face {
   font-family: groteskBold;
-  src: url("../../fonts/HKGrotesk-Bold.ttf"); }
+  src: url("../fonts/HKGrotesk-Bold.ttf"); }
 
 @font-face {
   font-family: otfGlusp;
-  src: url("../../fonts/OTF-Glusp.ttf"); }
+  src: url("../fonts/OTF-Glusp.ttf"); }
 
 @font-face {
   font-family: chakraM;
-  src: url("../../fonts/ChakraPetch-Medium.ttf"); }
+  src: url("../fonts/ChakraPetch-Medium.ttf"); }
 
 @font-face {
   font-family: chakraB;
-  src: url("../../fonts/ChakraPetch-Bold.ttf"); }
+  src: url("../fonts/ChakraPetch-Bold.ttf"); }
 
 * {
   padding: 0;
