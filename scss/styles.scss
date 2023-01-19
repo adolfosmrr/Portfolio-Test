@@ -1,8 +1,8 @@
-@import "./base/extend";
-@import "./base/fonts";
-@import "./base/generals";
-@import "./base/mixin";
-@import "./base/variables";
+@import "./base/extend.scss";
+@import "./base/fonts.scss";
+@import "./base/generals.scss";
+@import "./base/mixin.scss";
+@import "./base/variables.scss";
 @import "./components/_header.scss";
 @import "./components/_formContact.scss";
 @import "./components/_footer.scss";
